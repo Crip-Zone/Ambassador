@@ -1,0 +1,53 @@
+div.sceditor-toolbar {
+  flex-shrink: 0;
+  overflow: hidden;
+  padding: 3px 5px 2px;
+  background: #252525;
+    background-clip: border-box;
+  border-bottom: 1px solid #bd9851;
+  line-height: 0;
+  text-align: left;
+  user-select: none;
+  border-radius: 3px 3px 0 0;
+  background-clip: padding-box;
+  margin: 0 0 5px;
+}
+.sceditor-container {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  position: relative;
+  background: #292929;
+    background-clip: border-box;
+  border: 1px solid #bd9851;
+  font-size: 13px;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  color: #222;
+  line-height: 1;
+  font-weight: bold;
+  border-radius: 4px;
+  background-clip: padding-box;
+  min-width: 100%;
+  max-width: 100%;
+}
+.sceditor-container iframe, .sceditor-container textarea {
+  line-height: normal;
+  border: 0;
+  outline: none;
+  font-size: 14px;
+  color: #fff;
+  box-sizing: border-box;
+  padding: 0 5px;
+  margin: 0px;
+  resize: none;
+  background: #292929;
+  display: flex;
+  flex-basis: 175px;
+  flex-grow: 1;
+  min-width: 100%;
+  max-width: 100%;
+  height: 175px;
+  min-height: 1px;
+  max-height: 100%;
+}

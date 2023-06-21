@@ -7,7 +7,7 @@
  * @copyright 2022 Simple Machines and individual contributors
  * @license https://www.simplemachines.org/about/smf/license.php BSD
  *
- * @version 2.1.2
+ * @version 2.1.3
  */
 
 /*	This template is, perhaps, the most important template in the theme. It
@@ -49,7 +49,7 @@ function template_init()
 	$settings['theme_version'] = '2.1';
 
 	// Set the following variable to true if this theme requires the optional theme strings file to be loaded.
-	$settings['require_theme_strings'] = false;
+	$settings['require_theme_strings'] = true;
 
 	// Set the following variable to true if this theme wants to display the avatar of the user that posted the last and the first post on the message index and recent pages.
 	$settings['avatars_on_indexes'] = false;
@@ -464,7 +464,7 @@ function template_body_below()
     echo '
         <ul class="centertext">
             <li><a href="', $scripturl, '?action=help">', $txt['help'], '</a> ', (!empty($modSettings['requireAgreement'])) ? '| <a href="' . $scripturl . '?action=agreement">' . $txt['terms_and_rules'] . '</a>' : '', ' | <a href="#top_section">', $txt['go_up'], ' &#9650;</a></li>
-            <li>Ambassador by <a href="https://www.jpr62.com/theme/" target="_blank" class="new_win" title="Crip Zone">Crip</a> | Updated for SMF 2.1 By <a href="https://www.jpr62.com/theme/" target="_blank" class="new_win" title="The Crip Zone Team">TheCripZone</a></li>
+            <li>', $txt['themecopyright'], '</li>
             <li>', theme_copyright(), '</li>
         </ul>';
 

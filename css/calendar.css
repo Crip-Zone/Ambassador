@@ -10,31 +10,38 @@
 	margin: 0;
 }
 /* Used to indicate the current day in the grid. */
-#main_grid .calendar_today span.day_text,
+/* #main_grid .calendar_today span.day_text,
 #month_grid .calendar_today,
 .calendar_week tr.days_wrapper td.calendar_today:first-child {
 	font-weight: bold;
 	color: #ddd;
 /*	text-decoration: underline; */
+/* } */
+/* Used to indicate the current day in the grid. */
+#main_grid .calendar_today span.day_text, #month_grid .calendar_today span.day_text,
+.calendar_week tr.days_wrapper td.calendar_today:first-child {
+	font-weight: bold;
+	color: #bd9851;
 }
-.calendar_today,
+/* .calendar_today,
 td.days:hover {
 	background: #2d2d2d;
-}
+} */
 .calendar_today,
 td.days {
 	background: #2d2d2d;
 }
-.calendar_today {
+/* .calendar_today {
 	background: #2d2d2d;
-}
+} */
 #main_grid .calendar_today {
-   border-top: 2px solid #bd9851;
-   background: #2d2d2d;
+   border-top: 2px solid #606060;
+   background: linear-gradient(to bottom, #323232 50%, #2c2c2c 100%);
+   color: #bd9851;
 }
 #month_grid .calendar_today {
-   border-top: 2px solid #bd9851;
-   background: #2d2d2d;
+   border-top: 2px solid #606060;
+   background: linear-gradient(to bottom, #323232 50%, #2c2c2c 100%);
 }
 #month_grid {
 	width: 214px;
@@ -105,7 +112,7 @@ td.days {
 	width: 14%;
 	padding: 5px 10px;
 	text-align: left;
-	background: #e7eaef;
+	background: #1f1f1f;
 	color: #b1b1b1;
 }
 #main_grid td.weeks {
@@ -140,7 +147,8 @@ td.days {
 }
 #main_grid td.holidays a, #main_grid td.holidays span{
 	color: #b1b1b1;
-	background: #1f1f1f;
+	background: #936a2d;
+	font-weight: bold;
 }
 #main_grid td.birthdays,
 #month_grid td.birthdays {
@@ -171,23 +179,24 @@ td.days {
 	border-bottom: 1px solid #000;
 }
 #main_grid td.days {
-	padding: 5px;
-	background: #1f1f1f;
+/*	padding: 5px;
+	background: #1f1f1f; */
 }
 #month_grid td.days {
 	padding: 0;
 	width: 12.5%;
 	text-align: center;
-	background: #1f1f1f;
+/*	background: #1f1f1f; */
 
 }
 #month_grid td.days a {
 	display: block;
 	padding: 5px;
+	color: #b2b2b2;
 }
 #month_grid td.days a:hover {
-	text-decoration: none;
-	background: #2e2e2e;
+/*	text-decoration: none;
+	background: none; */
 }
 #main_grid tbody tr:nth-child(2) td.days,
 #month_grid tbody tr:nth-child(2) {
@@ -391,4 +400,14 @@ span.hidelink {
 		clear: both;
 		padding: 10px 0 0;
 	}
+}
+/* Here comes the glory... */
+.windowbg:nth-of-type(even), .bg.even {
+	background: #1f1f1f;
+}
+.windowbg:nth-of-type(even):hover, .bg.even, .windowbg:nth-of-type(odd):hover, .bg.odd {
+	background: #1f1f1f;
+}
+.windowbg:nth-of-type(odd), .bg.odd {
+	background: #1f1f1f;
 }

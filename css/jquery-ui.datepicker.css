@@ -102,6 +102,7 @@
 .ui-datepicker .ui-datepicker-header {
 	position: relative;
 	padding: .2em 0;
+	linear-gradient(to bottom, #ffde74 10%, #5c331e 90%);
 }
 
 .ui-datepicker .ui-datepicker-prev,
@@ -111,6 +112,7 @@
 	width: 1.8em;
 	height: 1.8em;
 	text-decoration: none !important;
+	color: #000;
 }
 
 .ui-datepicker .ui-datepicker-prev-hover,
@@ -181,8 +183,8 @@
 	overflow: hidden;
 	font-size: 1.1em;
 	font-weight: bold;
-	background: none;
-	color: #fff;
+	background: transparent;
+	color: #000;
 }
 
 .ui-datepicker .ui-datepicker-title select {
@@ -207,6 +209,7 @@
 	text-align: center;
 	font-weight: bold;
 	border: 0;
+	color: #b1b1b1;
 }
 
 .ui-datepicker td {
@@ -359,12 +362,12 @@
 }
 
 .ui-widget.ui-widget-content {
-	border: 1px solid #c5c5c5;
+	border: 1px solid #070707;
 }
 
 .ui-widget-content {
 	border: 1px solid #dddddd;
-	background: #ffffff;
+	background: #1b1b1b;
 	color: #333333;
 }
 
@@ -376,8 +379,8 @@
 	color: #fff;
 	font-family: "Tahoma", sans-serif;
 	font-weight: bold;
-	background: #557ea0;
-	border-bottom: 1px solid #777;
+	background: linear-gradient(to bottom, #ffde74 10%, #5c331e 90%);
+	border-bottom: 1px solid #000;
 	padding: 0;
 	border-radius: 6px 6px 0 0;
 	box-shadow: 0 16px 20px rgba(255, 255, 255, 0.15) inset;
@@ -387,7 +390,7 @@
 }
 
 .ui-widget-header a {
-	color: #fff;
+	color: transparent;
 }
 
 /* Interaction states
@@ -401,9 +404,10 @@ works properly when clicked or hovered */
 html .ui-button.ui-state-disabled:hover,
 html .ui-button.ui-state-disabled:active {
 	border: 1px solid transparent;
-	border-radius: 3px;
-	background: transparent;
+/*	border-radius: 3px; */
+	background: #1f1f1f;
 	font-weight: normal;
+	color: #b1b1b1;
 }
 
 .ui-state-default a,
@@ -416,7 +420,7 @@ a:visited.ui-button,
 	text-decoration: none;
 }
 
-.ui-state-hover,
+/* .ui-state-hover,
 .ui-widget-content .ui-state-hover,
 .ui-widget-header .ui-state-hover,
 .ui-state-focus,
@@ -424,14 +428,14 @@ a:visited.ui-button,
 .ui-widget-header .ui-state-focus,
 .ui-button:hover,
 .ui-button:focus {
-	background: #597b9f;
-	border: 1px solid #4a6b8c;
+	background: #2b2a2a;
+	border: 1px solid #000;
 	color: #fff;
 	cursor: pointer;
 	text-decoration: none;
 	box-shadow: 0 4px 4px rgba(255, 255, 255, 0.1) inset;
 	text-shadow: 1px 1px 3px rgba(255, 255, 255, 0.5);
-}
+} */
 
 .ui-state-hover a,
 .ui-state-hover a:hover,
@@ -455,14 +459,13 @@ a.ui-button:focus {
 .ui-widget-content .ui-state-active,
 .ui-widget-header .ui-state-active,
 a.ui-button:active,
-.ui-button:active,
-.ui-button.ui-state-active:hover {
-	background: orange;
+.ui-button:active {
+	background: #936a2d;
 	color: #fff;
 	font-weight: bold;
-	border: 1px solid #f49a3a;
+/*	border: 2px solid #606060;
 	box-shadow: 0 5px 5px rgba(255, 255, 255, 0.2) inset;
-	text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
+	text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6); */
 }
 
 .ui-icon-background,
@@ -483,14 +486,14 @@ a.ui-button:active,
 .ui-state-highlight,
 .ui-widget-content .ui-state-highlight,
 .ui-widget-header .ui-state-highlight {
-	border: 1px solid #dad55e;
-	background: #fffa90;
-	color: #777620;
+	border-top: 2px solid #606060;
+	background: linear-gradient(to bottom, #323232 50%, #2c2c2c 100%);
+	color: #bd9851;
 }
 
 .ui-state-checked {
-	border: 1px solid #dad55e;
-	background: #fffa90;
+	border-top: 2px solid #606060;
+	background: linear-gradient(to bottom, #323232 50%, #2c2c2c 100%);
 }
 
 .ui-state-highlight a,

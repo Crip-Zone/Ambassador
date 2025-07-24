@@ -10,30 +10,15 @@
 	margin: 0;
 }
 /* Used to indicate the current day in the grid. */
-/* #main_grid .calendar_today span.day_text,
-#month_grid .calendar_today,
-.calendar_week tr.days_wrapper td.calendar_today:first-child {
-	font-weight: bold;
-	color: #ddd;
-/*	text-decoration: underline; */
-/* } */
-/* Used to indicate the current day in the grid. */
 #main_grid .calendar_today span.day_text, #month_grid .calendar_today span.day_text,
 .calendar_week tr.days_wrapper td.calendar_today:first-child {
 	font-weight: bold;
 	color: #bd9851;
 }
-/* .calendar_today,
-td.days:hover {
-	background: #2d2d2d;
-} */
 .calendar_today,
 td.days {
 	background: #2d2d2d;
 }
-/* .calendar_today {
-	background: #2d2d2d;
-} */
 #main_grid .calendar_today {
    border-top: 2px solid #606060;
    background: linear-gradient(to bottom, #323232 50%, #2c2c2c 100%);
@@ -95,10 +80,6 @@ td.days {
 }
 #month_grid td.weeks a:hover {
 	text-decoration: underline;
-}
-#month_grid h3.catbg,
-#main_grid h3.catbg {
-/*	padding: 4px 6px 0 6px; */
 }
 #main_grid h3.catbg span {
 	display: block;
@@ -178,25 +159,16 @@ td.days {
 	border-right: 1px solid #000;
 	border-bottom: 1px solid #000;
 }
-#main_grid td.days {
-/*	padding: 5px;
-	background: #1f1f1f; */
-}
 #month_grid td.days {
 	padding: 0;
 	width: 12.5%;
 	text-align: center;
-/*	background: #1f1f1f; */
 
 }
 #month_grid td.days a {
 	display: block;
 	padding: 5px;
 	color: #b2b2b2;
-}
-#month_grid td.days a:hover {
-/*	text-decoration: none;
-	background: none; */
 }
 #main_grid tbody tr:nth-child(2) td.days,
 #month_grid tbody tr:nth-child(2) {
@@ -246,11 +218,7 @@ div.week_month_title a {
 td.week_post {
 	vertical-align: middle !important;
 }
-div.week_add_event {
-	/* text-align: center; */
-}
 div.week_add_event > a {
-	/* font-size: x-large; */
 	color: #999;
 }
 div.week_add_event > a:hover {

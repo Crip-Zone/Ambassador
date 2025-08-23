@@ -10,7 +10,7 @@
 	float: right;
 }
 .action_admin .table_grid td {
-	border: 1px solid #000;
+	border: 1px solid hsl(0, 0%, 0%);
 }
 .action_admin .generic_list .flow_auto {
 	padding: 4px 2px;
@@ -27,7 +27,7 @@ a.help span {
 	margin-right: 2px;
 }
 .table_caption, tr.table_caption td {
-	color: #000;
+	color: hsl(0, 0%, 0%);
 	font-size: 10px;
 	font-weight: bold;
 }
@@ -42,7 +42,7 @@ fieldset dl {
 }
 legend {
 	font-weight: bold;
-	color: #000;
+	color: hsl(0, 0%, 0%);
 }
 
 /* Styles for the admin home screen.
@@ -64,6 +64,21 @@ legend {
 	min-width: 0;
 	flex: 1 1 auto;
 }
+
+/* The welcome thingy. */
+#welcome {
+	border: 1px solid hsl(0, 0%, 0%);
+	border-top: none;
+	border-radius: 0 0 7px 7px;
+	font-size: 0.9em;
+	padding: 12px 9px 8px 9px;
+}
+#welcome a {
+	font-weight: bold;
+}
+#welcome img {
+	vertical-align: middle;
+}
 .search_results {
 	margin: 0 -6px;
 }
@@ -72,13 +87,13 @@ legend {
 	padding: 5px 0;
 	overflow: auto;
 	line-height: 1.7em;
-	border-bottom: double #ccc;
+	border-bottom: double hsl(0, 0%, 80%);
 }
 .search_results li:last-child {
 	border: none;
 }
 .search_results li a strong {
-	color: #346;
+	color: hsl(220, 33%, 30%);
 }
 .search_results li p {
 	padding: 0 20px;
@@ -106,22 +121,22 @@ legend {
 }
 #smfAnnouncements dt {
 	padding: 4px 6px 2px 6px;
-	border-top: 1px solid #bd9851;
+	border-top: 1px solid hsl(39, 45%, 53%);
 }
 #smfAnnouncements dt a {
-	color: #bd9851;
+	color: hsl(39, 45%, 53%);
 	font-weight: bold;
 	display: block;
 }
 #smfAnnouncements dd {
 	margin: 0;
 	padding: 6px 12px;
-	border-top: double #bd9851;
+	border-top: double hsl(39, 45%, 53%);
 }
 
 fieldset.admin_group legend {
-	background: #1b1b1b;
-	border: 1px solid #bd9851;
+	background: hsl(0, 0%, 11%);
+	border: 1px solid hsl(39, 45%, 53%);
 	padding: 1px 5px;
 	border-radius: 3px;
 }
@@ -277,12 +292,12 @@ fieldset.admin_group .inactive {
 	border: none;
 }
 #package_list li {
-	border: 1px solid #cacdd3;
+	border: 1px solid hsl(220, 9%, 81%);
 	padding: 0.2em;
 	margin: 1px;
 }
 .package_section {
-	border: 1px solid #cacdd3;
+	border: 1px solid hsl(220, 9%, 81%);
 }
 span.package_server {
 	padding: 0 3em;
@@ -312,23 +327,23 @@ pre.file_content {
 	text-align: center;
 }
 .perm_read {
-	background-color: #d1f7bf;
+	background-color: hsl(101, 78%, 86%);
 	width: 8%;
 }
 .perm_writable {
-	background-color: #ffbbbb;
+	background-color: hsl(0, 100%, 87%);
 	width: 8%;
 }
 .perm_execute {
-	background-color: #fdd7af;
+	background-color: hsl(31, 95%, 84%);
 	width: 8%;
 }
 .perm_custom {
-	background-color: #c2c6c0;
+	background-color: hsl(100, 5%, 76%);
 	width: 8%;
 }
 .perm_no_change {
-	background-color: #eee;
+	background-color: hsl(0, 0%, 93%);
 	width: 8%;
 }
 
@@ -350,31 +365,31 @@ pre.file_content {
 	padding: 8px 0;
 	margin: 0;
 	border-radius: 0;
-	border: 1px solid #000;
+	border: 1px solid hsl(0, 0%, 0%);
 	border-bottom: none;
 }
 #manage_boards li.windowbg:first-child {
 /*	border-top: none; */
 }
 #manage_boards li.windowbg:last-child {
-	border-bottom: 1px solid #000;
+	border-bottom: 1px solid hsl(0, 0%, 0%);
 	margin-bottom: 5px;
 }
 #manage_boards li.windowbg:hover {
-/*	background: #d0e7f8; */
+/*	background: hsl(206, 74%, 89%); */
 }
 #manage_boards li .floatleft {
 	font-weight: bold;
 	padding: 0 6px;
 }
 #manage_boards li#recycle_board {
-	background-color: #dee;
+	background-color: hsl(180, 33%, 90%);
 }
 #manage_boards li.redirect_board, #manage_boards li.redirect_board:hover {
-/*	background-color: #eed; */
+/*	background-color: hsl(60, 33%, 90%); */
 }
 #manage_boards li.redirect_board:hover {
-	background-color: #1b1b1b;
+	background-color: hsl(0, 0%, 11%);
 }
 .move_links {
 	padding: 0 13px 0 0;
@@ -390,7 +405,7 @@ pre.file_content {
 	margin: 0 0 8px 0;
 }
 #manage_boards span.post_group, #manage_boards span.regular_members {
-	border-bottom: 1px dotted #000;
+	border-bottom: 1px dotted hsl(0, 0%, 0%);
 	cursor: help;
 }
 .select_all_box {
@@ -408,7 +423,7 @@ dl.right dt {
 
 /* Styles for the manage membergroups section. */
 .denyboards_layout .board:hover {
-	background: #e3e9ec;
+	background: hsl(200, 19%, 91%);
 }
 .all_boards_in_cat {
 	margin-left: 2.5em;
@@ -464,15 +479,15 @@ span.search_weight {
 }
 .perm_boards li {
 	list-style-type: none;
-	border: 1px solid #cacdd3;
+	border: 1px solid hsl(220, 9%, 81%);
 	border-top: 0;
 	padding: 0.2em;
 }
 .perm_boards li:first-child {
-	border-top: 1px solid #cacdd3;
+	border-top: 1px solid hsl(220, 9%, 81%);
 }
 .perm_groups {
-	background-color: #fff;
+	background-color: hsl(0, 0%, 100%);
 }
 .perms {
 	width: 20px;
@@ -533,7 +548,7 @@ ul.moderation_notes {
 }
 ul.moderation_notes li {
 	padding: 0.2em;
-	border-bottom: 1px solid #ccc;
+	border-bottom: 1px solid hsl(0, 0%, 80%);
 }
 .notes {
 	margin-top: 0.4em;
@@ -551,8 +566,8 @@ ul.moderation_notes li {
 	padding: 3px 0;
 }
 .report_results th {
-	border-left: 1px solid #ddd;
-	border-right: 1px solid #ddd;
+	border-left: 1px solid hsl(0, 0%, 87%);
+	border-right: 1px solid hsl(0, 0%, 87%);
 }
 
 #support_credits .sub_bar {
@@ -562,9 +577,9 @@ ul.moderation_notes li {
 	margin: 5px 0 5px 0;
 }
 h3.config_hd {
-	background: #131313 url(../images/icons/config_hd.png) no-repeat 12px;
+	background: hsl(0, 0%, 7%) url(../images/icons/config_hd.png) no-repeat 12px;
 	padding: 8px 0 8px 45px;
-	color: #bbb;
+	color: hsl(0, 0%, 73%);
 }
 .full_width {
 	width: 100%;
@@ -578,13 +593,13 @@ h3.config_hd {
 }
 
 .windowbg.highlight2 {
-	background: #1b1b1b;
+	background: hsl(0, 0%, 11%);
 }
 
 /* Css edit page */
 #css_preview_box {
 	margin-bottom: 2ex;
-	border: 1px solid #777;
+	border: 1px solid hsl(0, 0%, 47%);
 	width: 100%;
 	height: 400px;
 }
@@ -598,11 +613,11 @@ h3.config_hd {
 }
 
 .move_smileys a:hover img {
-	border-color: #71a0c8;
+	border-color: hsl(208, 44%, 61%);
 }
 
 .move_smileys .selected_item {
-	border-color: #ffb42d;
+	border-color: hsl(39, 100%, 59%);
 }
 
 /* Progress bars */

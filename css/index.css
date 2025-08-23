@@ -1,21 +1,21 @@
 /* You can find detailed information at https://wiki.simplemachines.org/smf/Curve2_CSS
 /* Index */
 html {
-	background: #1b1b1b;
+	background: hsl(0, 0%, 11%);
 	scroll-padding-top: 3rem;
 }
 body {
-	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, black), color-stop(1, #757575));
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0, hsl(0, 0%, 0%)), color-stop(1, hsl(0, 0%, 46%)));
 	font: 83.33%/150% "Segoe UI", "Helvetica Neue", "Nimbus Sans L", Arial, "Liberation Sans", sans-serif;
-	color: #ddd;
+	color: hsl(0, 0%, 87%);
 	display: flex;
-	flex-direction: column;
+	flex-direction: column;  
 	min-height: 100vh;
 }
 ::selection {
-	text-shadow: 0px -1px black;
-	background: #cda95a;
-	color: #3b3b3b;
+	text-shadow: (0px -1px hsl(0, 0%, 0%));
+	background: hsl(41, 53%, 58%);
+	color: hsl(0, 0%, 23%);
 }
 /* General reset */
 * {
@@ -37,27 +37,26 @@ abbr {
 	border-bottom: 0.1em dotted;
 }
 input, button, select, textarea {
-	color: #fff;
+	color: hsl(0, 0%, 100%);
 	font: 83.33%/150% "Segoe UI", "Helvetica Neue", "Nimbus Sans L", Arial, "Liberation Sans", sans-serif;
-	background: #2e2e2e;
+	background: hsl(0, 0%, 18%);
 	outline: none;
-	border: 1px solid #a28875;
+	border: 1px solid hsl(25, 19%, 55%);
 	vertical-align: middle;
 	border-radius: 3px;
-/*	box-shadow: 1px 2px 1px rgba(160, 187, 221, 0.2) inset; */
 	padding: 0.3em 0.4em;
 }
 input:hover, textarea:hover, button:hover, select:hover {
 	outline: none;
-	border-color: #a28875;
+	border-color: hsl(39, 42%, 51%);
 }
 textarea:hover {
-	background: #000;
+	background: hsl(0, 0%, 0%);
 }
 input:focus, textarea:focus, button:focus, select:focus {
 	outline: none;
-	border: 1px solid #a28875;
-	background: #2e2e2e;
+	border: 1px solid hsl(25, 19%, 55%);
+	background: hsl(0, 0%, 18%);
 }
 input, button, select {
 	padding: 0 0.4em;
@@ -134,12 +133,12 @@ select option {
 fieldset {
 	padding: 18px;
 	margin: 0 0 6px 0;
-	border: 1px solid #000;
+	border: 1px solid hsl(0, 0%, 0%);
 	border-radius: 3px;
 }
 fieldset legend {
 	font-weight: bold;
-	color: #ddd;
+	color: hsl(0, 0%, 87%);
 	box-shadow: none;
 	border: none;
 }
@@ -152,10 +151,10 @@ summary {
 /* This gives a better effect for those areas, and will default to bold for fonts which do not support numerical font-weight */
 strong, .strong {
 	font-weight: bold;
-	color: #bd9851;
+	color: hsl(39, 45%, 53%);
 }
 .cat_bar strong {
-	color: #fff;
+	color: hsl(0, 0%, 100%);
 }
 em, .em {
 	font-style: italic;
@@ -163,7 +162,7 @@ em, .em {
 /* Default <strong> color on these tags */
 h1, h2, h3, h4, h5, h6 {
 	font-size: 1em;
-	color: #7c7c7c;
+	color: hsl(0, 0%, 49%);
 }
 /* All input elements that are checkboxes or radio buttons shouldn't have a border around them */
 input[type="checkbox"], input[type="radio"] {
@@ -178,9 +177,9 @@ input[type="checkbox"], input[type="radio"] {
 }
 /* Give disabled input elements a different style */
 input[disabled], textarea[disabled], select[disabled], .button.disabled, .button[disabled]:hover {
-	background: #eee;
-	color: #999;
-	border-color: #b6b6b6;
+	background: hsl(0, 0%, 19%);
+	color: hsl(0, 0%, 60%);
+	border-color: hsl(25, 19%, 55%);
 	opacity: 0.8;
 	cursor: default;
 }
@@ -189,12 +188,12 @@ hr {
 	border: none;
 	margin: 12px 0;
 	height: 2px;
-	background: #000;
-	box-shadow: 0 1px 0 #000 inset;
+	background: hsl(0, 0%, 0%);
+	box-shadow: 0 1px 0 hsl(0, 0%, 0%) inset;
 }
 /* This is about links */
 a, a:visited {
-	color: #bd9851;
+	color: hsl(39, 45%, 53%);
 	text-decoration: none;
 }
 a:hover {
@@ -211,6 +210,8 @@ body#help_popup {
 #likes li {
 	clear: both;
 	padding: 1px 0;
+	display: flex;
+	align-items: center;
 }
 #likes .avatar {
 	max-height: 45px;
@@ -237,14 +238,14 @@ body#help_popup {
 	position: relative;
 	top: -2px;
 	padding: 0 4px;
-	background: linear-gradient(#f97b00,#884d00);
-	color: #fff;
+	background: linear-gradient(to bottom, hsl(46, 100%, 73%) 10%, hsl(20, 51%, 24%) 90%);
+	color: hsl(0, 0%, 0%);
 	font: 9px/15px verdana, sans-serif;
 	border-radius: 2px;
 	opacity: 0.8;
 }
 a.new_posts:visited {
-	color: #fff;
+	color: hsl(0, 0%, 100%);
 }
 .new_posts:hover, .new_posts:focus {
 	text-decoration: none;
@@ -260,8 +261,8 @@ a.new_posts:visited {
 	float: left;
 }
 .floatleft2 {
-    float: left;
-    margin: -10px auto;
+	 float: left;
+	 margin: -10px auto;
 }
 .floatnone {
 	float: none;
@@ -285,7 +286,7 @@ a.new_posts:visited {
 /* Default font sizes: small (8pt), normal (10pt), and large (14pt). */
 .smalltext, tr.smalltext th {
 	font-size: 0.9em;
-	color: #ddd;
+	color: hsl(0, 0%, 87%);
 }
 .largetext {
 	font-size: 1.4em;
@@ -342,19 +343,19 @@ blockquote {
 	margin: 0 0 8px 0;
 	padding: 6px 10px;
 	font-size: 0.85rem;
-	border-left: 2px solid #000;
-	border-right: 2px solid #000;
-	border-top: 2px solid #000;
-	border-bottom: 1px dashed #bd9851;
+	border-left: 2px solid hsl(0, 0%, 0%);
+	border-right: 2px solid hsl(0, 0%, 0%);
+	border-top: 2px solid hsl(0, 0%, 0%);
+	border-bottom: 1px dashed hsl(39, 45%, 53%);
 }
 blockquote cite {
 	display: block;
-	border-bottom: 1px solid #bd9851;
+	border-bottom: 1px solid hsl(39, 45%, 53%);
 	font-size: 0.9em;
 	margin-bottom: 3px;
 }
 blockquote cite::before {
-	color: #aaa;
+	color: hsl(39, 45%, 53%);
 	font-size: 22px;
 	font-style: normal;
 	content: "\275D";
@@ -362,18 +363,23 @@ blockquote cite::before {
 	vertical-align: middle;
 }
 .bbc_standard_quote {
-	background-color: #252525;
+	background-color: hsl(0, 0%, 15%);
 }
 .bbc_alternate_quote {
-	background-color: #292929;
+	background-color: hsl(0, 1%, 23%);
+	margin: 1px 0 6px 0;
+	padding: 3px 12px;
+	overflow: auto;
+	white-space: nowrap;
+	max-height: 25em;
 }
 
 /* A code block - maybe PHP ;). */
 .bbc_code {
 	display: block;
 	font-size: 0.78rem;
-	background: #1b1b1b;
-	border: 1px solid #bd9851;
+	background: hsl(0, 0%, 18%);
+	border: 1px solid hsl(39, 45%, 53%);
 	border-radius: 2px;
 	margin: 1px 0 6px 0;
 	padding: 3px 12px;
@@ -383,7 +389,7 @@ blockquote cite::before {
 }
 /* The "Quote:" and "Code:" header parts... */
 .codeheader, .quoteheader {
-	color: #ddd;
+	color: hsl(0, 0%, 87%);
 	font-size: 0.9em;
 	padding: 0 2px;
 }
@@ -397,11 +403,11 @@ blockquote cite::before {
 }
 /* Styling for BBC tags */
 .bbc_link {
-	border-bottom: 1px solid #a8b6cf;
+	border-bottom: 1px solid hsl(218, 29%, 74%);
 }
 .bbc_link:hover {
 	text-decoration: none;
-	border-bottom: 1px solid #346;
+	border-bottom: 1px solid hsl(0, 0%, 100%);
 }
 .bbc_size {
 	line-height: 1.4em;
@@ -458,7 +464,7 @@ a img {
 	width: 17px;
 	height: 15px;
 	display: inline-block;
-	background: #434342 url(../images/icons/toggle.png) no-repeat 0 0 / 17px;
+	background: hsl(60, 1%, 26%) url(../images/icons/toggle.png) no-repeat 0 0 / 17px;
 	overflow: hidden;
 	content: "";
 	border-radius: 3px;
@@ -469,8 +475,8 @@ a img {
 }
 
 .toggle_up:hover:before, .toggle_down:hover:before {
-	background-color: #bfd4e7;
-	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.25) inset;
+	background-color: hsl(208, 45%, 83%);
+	box-shadow: 0 1px 2px hsla(0, 0%, 0%, 0.25) inset;
 	transition: background-color 0.25s;
 }
 
@@ -486,7 +492,7 @@ a img {
 /* Highlighted text - such as search results. */
 .highlight {
 	font-weight: bold;
-	color: #ff7200 !important;
+	color: hsl(27, 100%, 50%) !important;
 	font-size: 1.1em;
 	background-color: inherit;
 }
@@ -498,7 +504,7 @@ a img {
 	clear: both;
 }
 .pagesection .pagelinks {
-	display: block;
+	display: inline-block;
 	float: left;
 }
 .pages::after, .jump_to::after, .code::after,
@@ -508,14 +514,14 @@ strong[id^='child_list_']::after {
 .pages {
 	font-size: 0.9em;
 	margin-left: 7px;
-	color: #b1b1b1;
+	color: hsl(0, 0%, 69%);
 }
 #main_content_section .pagesection {
 	margin: 4px 0 0 0;
 }
 .pagelinks .button {
 	padding: 0 5px;
-	color: #bd9851;
+	color: hsl(39, 45%, 53%);
 }
 .nav_page {
 	padding: 0 1px;
@@ -526,7 +532,7 @@ strong[id^='child_list_']::after {
 }
 .current_page {
 	padding: 0 4px 0 2px;
-	color: #b1b1b1;
+	color: hsl(0, 0%, 69%);
 	font-family: verdana, sans-serif;
 	font-weight: bold;
 }
@@ -542,20 +548,20 @@ strong[id^='child_list_']::after {
 	overflow: auto;
 	line-height: 1.4em;
 	padding: 1px 0;
-	color: #ddd;
+	color: hsl(0, 0%, 87%);
 }
 
 /* Calendar colors for birthdays, events and holidays */
 .birthday {
-	color: #920ac4;
+	color: hsl(284, 90%, 40%);
 }
 
 .event {
-	color: #078907;
+	color: hsl(120, 90%, 28%);
 }
 
 .holiday > span {
-	color: #fff;
+	color: hsl(0, 0%, 100%);
 }
 /* Events that are currently selected on the calendar. Won't see it much, probably. */
 .sel_event {
@@ -563,24 +569,26 @@ strong[id^='child_list_']::after {
 }
 
 .warn_moderate {
-	color: #ffa500;
+	color: hsl(39, 100%, 50%);
 }
 
 .warn_watch, .success {
-	color: green;
+	color: hsl(120, 100%, 25%);
 }
 
 a.moderation_link, a.moderation_link:visited {
 	font-weight: bold;
-	padding: 0px 8px;
-	background: #f59e00;
+	padding: 0px 6px;
+	background: hsl(39, 45%, 53%);
+	color: hsl(0, 0%, 0%);
+	border-radius: 50%;
 }
 /* AJAX notification bar
 ------------------------------------------------------- */
 #ajax_in_progress {
-	background: #fff;
-	border-bottom: 4px solid #f96f00;
-	color: #f96f00;
+	background: hsl(0, 0%, 100%);
+	border-bottom: 4px solid hsl(27, 100%, 49%);
+	color: hsl(27, 100%, 49%);
 	text-align: center;
 	font-size: 1.6em;
 	padding: 8px;
@@ -592,7 +600,7 @@ a.moderation_link, a.moderation_link:visited {
 }
 
 #ajax_in_progress a {
-	color: orange;
+	color: hsl(39, 100%, 50%);
 	text-decoration: underline;
 	font-size: 0.9em;
 	float: right;
@@ -628,7 +636,7 @@ dl.settings dd {
 dl.settings img {
 	margin: 0 10px 0 0;
 	vertical-align: middle;
-	background: #fff;
+	background: transparent;
 }
 
 /* a general table class */
@@ -641,7 +649,7 @@ table.table_grid td {
 	padding: 3px;
 }
 table.table_grid td:hover {
-	background: #2b2a2a;
+	background: hsl(0, 1%, 17%);
 }
 /* Some predefined widths (mostly for tables) */
 .table_grid.half_content, .half_table {
@@ -662,7 +670,7 @@ table.table_grid td:hover {
 
 .title_bar th, .windowbg th {
 	padding: 4px 8px;
-	color: #ddd;
+	color: hsl(0, 0%, 87%);
 }
 .title_bar .sort_down, .title_bar .sort_up {
 	margin: -3px 0 0 2px;
@@ -689,8 +697,8 @@ img.sort, .sort {
 }
 
 .postbg {
-	border-left: 1px solid #7f7f7f;
-	border-right: 1px solid #7f7f7f;
+	border-left: 1px solid hsl(0, 0%, 50%);
+	border-right: 1px solid hsl(0, 0%, 50%);
 }
 
 /* Styles used by the auto suggest control.
@@ -700,17 +708,17 @@ img.sort, .sort {
 	visibility: hidden;
 	border-radius: 3px;
 	outline: none !important;
-	border: 1px solid #bbb;
+	border: 1px solid hsl(0, 0%, 73%);
 	z-index: 100;
 }
 .auto_suggest_item {
-	background: #000;
+	background: hsl(0, 0%, 0%);
 	padding: 1px 4px;
 }
 .auto_suggest_item_hover {
-	background: #888;
+	background: hsl(0, 0%, 53%);
 	cursor: pointer;
-	color: #eee;
+	color: hsl(0, 0%, 93%);
 	padding: 1px 4px;
 }
 
@@ -722,36 +730,35 @@ img.sort, .sort {
 /* Level 1 button background. */
 .dropmenu > li, #top_info > li {
 	display: inline-block;
-	margin: 0 2px 0 1px;
 	font-size: 0.9em;
 	line-height: 1.9em;
 }
 /* Disable default focus outlines */
 .dropmenu a {
 	outline: 0;
-	color: #fff;
+	color: hsl(0, 0%, 100%);
 }
 /* For cases where we want to spotlight something specific to an item, e.g. an amount */
 .amt {
 	margin-left: 3px;
 	padding: 0 5px;
-	color: #000;
-	background: #bd9851;
+	color: hsl(0, 0%, 0%);
+	background: hsl(39, 45%, 53%);
 	border-radius: 8px;
-	border: 1px solid #bd9851;
+	border: 1px solid hsl(39, 45%, 53%);
 }
 .dropmenu li .active .amt {
-	color: #bd9851;
-	background: #000;
-	border: 1px solid #bd9851;
+	color: hsl(39, 45%, 53%);
+	background: hsl(0, 0%, 0%);
+	border: 1px solid hsl(39, 45%, 53%);
 }
 .dropmenu li :hover.active .amt {
-	color: #000;
-	background: #bd9851;
-	border: 1px solid #bd9851;
+	color: hsl(0, 0%, 0%);
+	background: hsl(39, 45%, 53%);
+	border: 1px solid hsl(39, 45%, 53%);
 }
 #top_info li .active .amt {
-	background: rgba(0, 0, 0, 0.2);
+	background: hsla(0, 0%, 0%, 0.2);
 	color: inherit;
 }
 #top_info .top_menu.visible {
@@ -759,7 +766,7 @@ img.sort, .sort {
 }
 /* Needed for new PM notifications. */
 .dropmenu li strong {
-	color: #333;
+	color: hsl(0, 0%, 20%);
 }
 
 .dropmenu li a, #top_info > li > a {
@@ -770,39 +777,35 @@ img.sort, .sort {
 }
 /* Level 1 active button. */
 .dropmenu a.active, #top_info a.active {
-	color: #000;
+	color: hsl(0, 0%, 0%);
 	font-weight: bold;
-/*	border-color: 1px solid #ffde74;
-	background: linear-gradient(to bottom, #ffde74 10%, #5c331e 90%); */
 }
 
 /* Level 1 active button. */
 .dropmenu li a.active, #top_info li a.active {
-	background: linear-gradient(to bottom, #ffde74 10%, #5c331e 90%);
-	color: #000;
+	background: linear-gradient(to bottom, hsl(46, 100%, 73%) 10%, hsl(20, 51%, 24%) 90%);
+	color: hsl(0, 0%, 0%);
 	font-weight: bold;
-	border: 1px solid #ffde74;
+	border: 1px solid hsl(46, 100%, 73%);
 }
 .dropmenu li a.active .amt {
-	color: #bd9851;
-	background: #000;
+	color: hsl(39, 45%, 53%);
+	background: hsl(0, 0%, 0%);
 }
 /* Level 1 hover effects. */
 .dropmenu li a:hover, .dropmenu li:hover a, .dropmenu li a:focus, #top_info > li > a:hover, #top_info > li:hover > a, #top_info > li > a.open {
-	background: linear-gradient(to bottom, #4c4c4c 10%, #1b1b1b 90%);
-	border: 1px solid #fff;
-	color: #fff;
+	border: 1px solid hsl(46, 100%, 73%);
+	color: hsl(0, 0%, 100%);
 	cursor: pointer;
 	text-decoration: none;
-	box-shadow: 0 4px 4px rgba(255, 255, 255, 0.1) inset;
-	text-shadow: 1px 1px 3px rgba(255, 255, 255, 0.5);
+	text-shadow: 1px 1px 3px hsla(0, 0%, 100%, 0.5);
 }
 /* Level 1 active button. */
 .dropmenu li a.active:hover, .dropmenu li:hover a.active {
-	background: linear-gradient(to bottom, #4c4c4c 10%, #1b1b1b 90%);
-	border: 1px solid #ffde74;
-	color: #fff;
-	box-shadow: 0 5px 5px rgba(255, 255, 255, 0.2) inset;
+	background: linear-gradient(to bottom, hsl(0, 0%, 30%) 10%, hsl(0, 0%, 11%) 90%);
+	border: 1px solid hsl(46, 100%, 73%);
+	color: hsl(0, 0%, 100%);
+	box-shadow: 0 5px 5px hsla(0, 0%, 100%, 0.2) inset;
 	text-shadow: none;
 }
 
@@ -812,7 +815,7 @@ a[class^="mobile_generic_menu_"] {
 }
 
 #main_menu {
-	margin: 0 0 4px 0;
+	margin: 6px 0 2px 0;
 }
 
 /* User information. */
@@ -855,18 +858,18 @@ a[class^="mobile_generic_menu_"] {
 }
 .pm_unread, .alerts_unread {
 	margin-top: 5px;
-	border-top: 1px solid #000;
+	border-top: 1px solid hsl(0, 0%, 0%);
 }
 .unread_notify {
-	border-bottom: 1px solid #000;
+	border-bottom: 1px solid hsl(0, 0%, 0%);
 }
 .no_unread {
 	margin-top: 5px;
 	text-align: center;
-	color: #ddd;
+	color: hsl(0, 0%, 87%);
 }
 .unread_notify:hover {
-	background: #eee;
+	background: hsl(0, 0%, 2%);
 	text-decoration: none;
 }
 .unread_notify:last-child {
@@ -920,58 +923,86 @@ a[class^="mobile_generic_menu_"] {
 	font-weight: bold;
 }
 /* Levels 2 and 3 submenu wrapper. */
-.dropmenu li ul, .top_menu {
+.top_menu {
 	z-index: 90;
 	position: absolute;
 	display: none;
 	min-width: 18.2em;
 	padding: 0.5em;
 	font-weight: normal;
-	border: 1px solid #bd9851;
-	border-left: solid 1px #bbb;
-	border-top: solid 1px #ccc;
+	border: 1px solid hsl(39, 45%, 53%);
 	border-radius: 4px;
-	box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.3);
-	background: #1b1b1b;
+	box-shadow: 3px 3px 4px hsla(0, 0%, 0%, 0.3);
+	background: hsl(0, 0%, 11%);
+}
+.dropmenu li ul {
+	z-index: 90;
+	display: none;
+	position: absolute;
+	width: 19em;
+	font-weight: normal;
+	border: none;
+	background: url(../images/theme/menu_gfx.png) 0 -100px no-repeat;
+	padding: 6px 0 0 0;
 }
 /* Level 2 link background. */
 .dropmenu li li {
+	background: hsl(0, 0%, 13%);
+	width: 19em;
 	margin: 0;
-	padding: 0;
-	width: 17em;
-	font-size: 1em;
-	border-radius: 3px;
-	border: 1px solid transparent;
+	border-radius: 0;
+	border: none;
+}
+.dropmenu li li {
+	border: none;
+}
+.dropmenu li li a{
+	background: hsl(0, 0%, 13%);
+	margin: 0;
+	color: hsl(0, 0%, 87%);
+	line-height: 2.2em;
+	border: none;
+	border-radius: 0;
+}
+.dropmenu li li a span{
+	background: hsl(0, 0%, 13%);
+	margin: 0;
+	color: hsl(0, 0%, 87%);
+	line-height: 2.2em;
+	border: none;
+	border-radius: 0;
 }
 /* Necessary to allow highlighting of 1st level while hovering over submenu. */
-.dropmenu li:hover li a, .dropmenu li li a {
-	background: #1b1b1b;
-	padding: 0 9px;
-	color: #ddd;
+.dropmenu li:hover li a, .dropmenu li:hover li a span, .dropmenu li:hover li a, .dropmenu li:hover li {
+	background: none;
+	color: hsl(0, 0%, 87%);
 	border: none;
 	line-height: 2.2em;
 	text-shadow: none;
+	border-radius: 0;
 }
 .dropmenu li:hover li a > .amt {
-	padding: 0 9px;
-	border: none;
+	padding: 0 5px;
+	border: 1px solid hsl(39, 45%, 53%);
 	line-height: 2.2em;
 	text-shadow: none;
-	color: #000;
-	background: #bd9851;
+	color: hsl(0, 0%, 0%);
+	background: hsl(39, 45%, 53%);
+	border-radius: 50%;
 }
 .dropmenu li li a > .amt {
-	padding: 0 9px;
-	border: none;
+	padding: 0 5px;
+	border: 1px solid hsl(39, 45%, 53%);
 	line-height: 2.2em;
 	text-shadow: none;
-	color: #bd9851;
-	background: #000;
+	color: hsl(0, 0%, 0%);
+	background: hsl(39, 45%, 53%);
+	border-radius: 50%;
 }
 .dropmenu li li a > img {
 	vertical-align: middle;
-	color: #bd9851;
-	background: #000;
+	color: hsl(39, 45%, 53%);
+	background: hsl(0, 0%, 0%);
 }
 /* The profile/pm menus are declared off .dropmenu li ul for consistency but have other characteristics. */
 .top_menu {
@@ -990,20 +1021,6 @@ a[class^="mobile_generic_menu_"] {
 .top_menu .login input {
 	width: 90%;
 }
-/* Note: The next declarations are for keyboard access with js disabled. */
-.dropmenu ul a:focus, .dropmenu ul ul a:focus {
-	margin-left: 9990px;
-	border: none;
-	width: 17em;
-}
-.dropmenu ul ul a:focus {
-	margin-left: 19950px;
-}
-/* Cancel those for hover and/or js access. */
-.dropmenu ul li:hover a:focus, .dropmenu ul li a:focus {
-	margin-left: 0;
-	width: auto;
-}
 /* Level 3 submenu wrapper positioning. */
 .dropmenu li ul ul {
 	margin: -2em 0 0 15.3em;
@@ -1015,13 +1032,13 @@ a[class^="mobile_generic_menu_"] {
 /* Levels 2 and 3 hover effects. */
 .dropmenu li li:hover {
 	border: none;
+	background: hsl(0, 0%, 11%);
 }
 
 .dropmenu li li:hover > a, .dropmenu li li a:focus, .dropmenu li li a:hover {
-	color: #fff;
+	color: hsl(0, 0%, 100%);
 	text-decoration: none;
-	border: 1px solid #cfcfcf;
-	border-top: 1px solid #d4dee6;
+	border: none;
 }
 /* Reposition Level 2 submenu as visible on hover. */
 .dropmenu li:hover ul {
@@ -1034,6 +1051,7 @@ a[class^="mobile_generic_menu_"] {
 /* Reposition as visible on hover. */
 .dropmenu li li:hover ul, .dropmenu li li ul {
 	left: -14px;
+	border: none;
 }
 .dropmenu li li.subsections > a::after {
 	position: absolute;
@@ -1041,6 +1059,7 @@ a[class^="mobile_generic_menu_"] {
 	right: 10px;
 	font: 83.33%/150% Arial, sans-serif;
 	content: "\25ba";
+	border: none;
 }
 /* Highlighting of current section */
 .dropmenu li li a.chosen {
@@ -1059,54 +1078,50 @@ a[class^="mobile_generic_menu_"] {
 	z-index: 100;
 	padding: 5px 0 5px 0;
 	margin: 5px 0 5px 0;
+	color: hsl(0, 0%, 100%);
 }
-.button, .inline_mod_check, .quickbuttons > li > a {
+.button, .inline_mod_check {
 	display: inline-block;
 	padding: 0 8px;
-	color: #fff;
+	color: hsl(39, 45%, 53%);
 	font-size: 0.7rem;
 	line-height: 2em;
 	text-transform: uppercase;
 	cursor: pointer;
 	height: calc(2em + 2em * (0.9 - 0.85)); /* "input" font size minus ".button" font size */
-	border: 1px solid #ddd;
+	border: 1px solid hsl(39, 45%, 53%);
 	border-radius: 3px;
 	box-sizing: border-box;
 	vertical-align: middle;
 }
-.pagesection {
-	color: #e7c567;
-	border: 1px solid transparent;
+html[lang="el-GR"] .button,
+html[lang="el-GR"] .quickbuttons > li > a,
+html[lang="el-GR"] .inline_mod_check {
+	text-transform: capitalize;
 }
-.button {
-	color: #f3f3f3;
-	border: 1px solid #f3f3f3;
-}
-.button:not(:first-child) {
-	margin-left: 4px;
-	border: 1px solid #ddd;
+.pagesection .button {
+	color: hsl(39, 45%, 53%);
 }
 .button:hover, .button:focus,
 .quickbuttons > li:hover > a, .quickbuttons > li > a:focus {
-	background: linear-gradient(to bottom, #ffde74 10%, #5c331e 90%);
-	color: #fff;
-	border: 1px solid #ffde74;
+	background: linear-gradient(to bottom, hsl(46, 100%, 73%) 10%, hsl(20, 51%, 24%) 90%);
+	color: hsl(0, 0%, 100%);
+	border: 1px solid hsl(46, 100%, 73%);
 	text-decoration: none;
 }
 .button:hover, .button:focus {
-	color: #af6700;
+	color: hsl(35, 100%, 34%);
 }
 /* the active one */
 .button.active {
-	background: linear-gradient(to bottom, #ffde74 10%, #5c331e 90%);
-	color: #000;
-	font-weight: bold;
-	border: 1px solid #ffde74;
-	text-shadow: 0 0 1px #000;
+	background: linear-gradient(to bottom, hsl(46, 100%, 73%) 10%, hsl(20, 51%, 24%) 90%);
+	color: hsl(0, 0%, 0%);
+	border: 1px solid hsl(46, 100%, 73%);
+	text-shadow: 0 0 1px hsl(0, 0%, 0%);
 }
 .button.active:hover, .button.active:focus {
-	background: linear-gradient(to bottom, #4c4c4c 10%, #1b1b1b 90%);
-	color: #fff;
+	background: linear-gradient(to bottom, hsl(0, 0%, 30%) 10%, hsl(0, 0%, 11%) 90%);
+	color: hsl(0, 0%, 100%);
 	box-shadow: none;
 }
 .cat_bar .button {
@@ -1139,11 +1154,10 @@ a[class^="mobile_generic_menu_"] {
 #wrapper {
 	width: 90%;
 	clear: both;
-	background: #fff;
-	border: 1px solid #b8b8b8;
-	box-shadow: 0 2px 3px rgba(0, 0, 0, 0.14);
-	border: 2px solid #000000;
-	background: #1f1f1f url(../images/frame/border_bg.gif) top left repeat-x;
+	border: 1px solid hsl(0, 0%, 72%);
+	box-shadow: 0 2px 3px hsla(0, 0%, 0%, 0.14);
+	border: 2px solid hsl(0, 0%, 0%);
+	background: hsl(0, 0%, 12%) url(../images/frame/border_bg.gif) top left repeat-x;
 	padding: 10px;
 }
 
@@ -1157,9 +1171,9 @@ a[class^="mobile_generic_menu_"] {
 /* The framing graphics */
 /* The top bar. */
 #top_section {
-	border-bottom: 1px solid #bd9851;
-	box-shadow: 0 1px 4px rgba(0, 0, 0, 0.16);
-	background: #1b1b1b;
+	border-bottom: 1px solid hsl(39, 45%, 53%);
+	box-shadow: 0 1px 4px hsla(0, 0%, 0%, 0.16);
+	background: hsl(0, 0%, 11%);
 	clear: both;
 }
 #top_section::after {
@@ -1212,13 +1226,13 @@ a[class^="mobile_generic_menu_"] {
 h1.forumtitle {
 	font-size: 1.8em;
 	font-family: "Tahoma", sans-serif;
-	padding: 22px 12px 6px 10px;
+	padding: 22px 12px 0px 10px;
 	font-weight: normal;
 	flex: 1 1 auto;
 }
 h1.forumtitle a {
-	color: #a85400;
-	text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+	color: hsl(39, 45%, 53%);
+	text-shadow: 1px 1px 1px hsla(0, 0%, 0%, 0.3);
 }
 /* Float these items to the right */
 #siteslogan, img#smflogo {
@@ -1227,11 +1241,11 @@ h1.forumtitle a {
 }
 /* Tweak the SMF logo */
 img#smflogo {
-	margin: -35px 3px 15px 0;
+	margin: 16px 0 0 0;
 }
 /* Even guests need to be aligned */
 .welcome {
-	padding: 7px 0 8px 10px;
+	padding: 0 10px;
 	line-height: 2.5em;
 }
 /*
@@ -1239,14 +1253,14 @@ img#smflogo {
 #upper_section {
 	text-align: left;
 	padding: 8px;
-	border-bottom: 2px solid #000000;
-	background: #1b1b1b;
-	color: #7c7c7c;
+	border: 1px solid hsl(0, 0%, 0%);
+	background: hsl(0, 0%, 11%);
+	color: hsl(0, 0%, 49%);
 }
 #inner_section {
 	padding: 12px 10px 2px 10px;
 	border-radius: 6px 6px 0 0;
-	background: #1b1b1b;
+	background: hsl(0, 0%, 11%);
 }
 #inner_section::after {
 	content: "";
@@ -1258,8 +1272,8 @@ img#smflogo {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	border-bottom: 2px solid #000;
-	margin-bottom: 12px;
+	border-bottom: 1px solid hsl(0, 0%, 0%);
+	margin-bottom: 2px;
 }
 .user {
 	width: 50%;
@@ -1267,7 +1281,7 @@ img#smflogo {
 	overflow: auto;
 	padding: 0 4px 6px 4px;
 	font-size: 0.9em;
-	color: #b1b1b1;
+	color: hsl(0, 0%, 69%);
 }
 .user:only-child {
 	width: 100%;
@@ -1303,7 +1317,7 @@ ul li.greeting {
 	float: right;
 	padding: 0 0 6px 0;
 	font-size: 0.9em;
-	color: #b1b1b1;
+	color: hsl(0, 0%, 69%);
 }
 #inner_wrap .news h2 {
 	line-height: initial;
@@ -1312,7 +1326,7 @@ ul li.greeting {
 #inner_wrap .news p {
 	display: inline;
 	padding: 0 0 0 4px;
-	color: #b1b1b1;
+	color: hsl(0, 0%, 69%);
 }
 
 /* The navigation list (i.e. linktree) */
@@ -1326,20 +1340,18 @@ ul li.greeting {
 	padding: 0;
 }
 .navigate_section ul {
-	margin: 4px 0 0 0;
+	margin: 2px 0 -5px 0;
 	padding: 0 10px;
 	font-size: 0.9em;
 	overflow: hidden;
-	border: 1px solid #000;
-	border-radius: 2px;
-/*	box-shadow: 0 -2px 2px rgba(0, 0, 0, 0.08); */
+	border-top: 1px dashed hsl(0, 0%, 20%);
+	background: none;
 }
 .navigate_section ul li {
 	float: left;
-	padding-bottom: 3px;
-	line-height: 1.1em;
-	color: #989898;
-/*	text-shadow: 1px 1px 0 #fff; */
+	color: hsl(0, 0%, 60%);
+	margin-bottom: -3px;
+	margin-top: -3px;
 }
 .navigate_section ul li a, .navigate_section ul li em {
 	padding: 4px 0 4px;
@@ -1351,7 +1363,7 @@ ul li.greeting {
 	margin-top: 8px;
 }
 .navigate_section ul li .dividers {
-	color: #bd9851;
+	color: hsl(39, 45%, 53%);
 	font: 83.33%/150% Arial, sans-serif;
 	padding: 0 2px 0 6px;
 }
@@ -1362,6 +1374,7 @@ ul li.greeting {
 .navigate_section a:hover span {
 	text-decoration: underline;
 }
+
 /* The content section */
 #content_section {
 	margin: 0 auto;
@@ -1369,14 +1382,11 @@ ul li.greeting {
 }
 #main_content_section {
 	text-align: left;
-	padding: 10px 12px 120px 12px;
-	border: 1px solid #000000;
-	background: #1b1b1b;
-}
-#main_content_section:hover {
-	text-align: left;
-	padding: 10px 12px 120px 12px;
-	border: 1px solid #000000;
+	padding: 10px 12px 10px 12px;
+	border: 1px solid hsl(0, 0%, 0%)000;
+	border-bottom: none;
+	background: hsl(0, 0%, 11%);
+	border-top: none;
 }
 #main_content_section::after {
 	content: "";
@@ -1386,20 +1396,18 @@ ul li.greeting {
 /* Footer is now full-width by default. */
 /* The footer with copyright links etc. */
 #footer {
-	margin: -130px 0 0 0;
-	padding: 0 0 5px;
-	background: rgba(255, 255, 255, 0);
-	border-bottom-left-radius: 8px;
-	flex: none;
-	height: 130px;
-	border-bottom-right-radius: 8px;
+	margin: 0px;
+	padding: 10px 0px;
+	background: hsl(0, 0%, 11%);
+	color: hsl(39, 45%, 53%);
 	width: auto;
-	align-self: center;
-	color: #bd9851;
+	text-align: center;
+	border: 1px solid hsl(0, 0%, 0%);
+	border-top: none;
 }
 #footer li, #footer p, #footer a {
 	font-size: 0.9em;
-	color: #bd9851;
+	color: hsl(39, 45%, 53%);
 }
 #footer li.copyright {
 	display: block;
@@ -1428,7 +1436,7 @@ ul li.greeting {
 	margin: -4px 8px 6px 8px;
 	padding: 4px 0 0 0;
 	font-size: 0.9em;
-	border-top: 1px solid #000;
+	border-top: 1px solid hsl(0, 0%, 0%);
 }
 
 .fix_rtl_names {
@@ -1448,36 +1456,36 @@ ul li.greeting {
 .quickbuttons > li {
 	float: left;
 	display: inline;
-	height: 23px;
+	height: 24px;
 	border-radius: 1px;
-	box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
+	box-shadow: 1px 1px 1px hsla(0, 0%, 0%, 0.1);
 	padding: 0 1px 0 1px;
-	color: #222;
+	color: hsl(0, 0%, 13%);
 	overflow: visible;
 }
 .quickbuttons > li > a, .inline_mod_check {
-	background: #1b1b1b;
-	text-decoration: none;
-	color: #fff;
+	background: hsl(0, 0%, 11%);
+	text-transform: uppercase;
+	color: hsl(0, 0%, 100%);
 	padding: 0 4px 0 5px;
 	display: block;
-	line-height: 1.9em;
-	border: 1px solid #ffde74;
+	line-height: 1.85em;
+	border: 1px solid hsl(46, 100%, 73%);
 }
 .quickbuttons li a:hover {
 	text-decoration: none;
-	color: #fff;
-	background-image: linear-gradient(to bottom, #4c4c4c 10%, #1b1b1b 90%);
+	color: hsl(0, 0%, 100%);
+	background-image: linear-gradient(to bottom, hsl(0, 0%, 30%) 10%, hsl(0, 0%, 11%) 90%);
 }
 .quickbuttons > li:first-child > a {
 	border-radius: 4px 0 0 4px;
 }
 .quickbuttons > li:last-child > a, .inline_mod_check:last-child {
 	border-radius: 0 4px 4px 0;
+	border: 1px solid hsl(46, 100%, 73%);
 }
 .quickbuttons li:hover {
-	border-radius: 1px;
-	box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
+	box-shadow: 1px 1px 1px hsla(0, 0%, 0%, 0.1);
 }
 .quickbuttons > li:only-child > a, .inline_mod_check:only-child {
 	border-radius: 4px;
@@ -1490,18 +1498,18 @@ ul li.greeting {
 	height: auto;
 }
 .moderationbuttons_check:focus {
-	box-shadow: 0 0 4px #499dd8;
+	box-shadow: 0 0 4px hsl(205, 65%, 57%);
 }
 .quick_edit, .post_options {
 	position: relative;
 }
 .quick_edit {
-	border-radius: none;
+	border-radius: 0;
 }
 /* Drop part of QuickButtons */
 .post_options ul, .post_options ul a:hover, .post_options ul a:focus {
-	background: #fff; /* fallback for some browsers */
-	background-image: linear-gradient(#e2e9f3 0%, #fff 70%);
+	background: hsl(0, 0%, 100%); /* fallback for some browsers */
+	background-image: linear-gradient(hsl(215, 41%, 92%) 0%, hsl(0, 0%, 100%) 70%);
 }
 .post_options ul {
 	display: none;
@@ -1510,14 +1518,13 @@ ul li.greeting {
 	right: -1px;
 	z-index: 90;
 	padding: 6px;
-	background: #fff;
+	background: hsl(0, 0%, 100%);
 	font-weight: normal;
 	text-align: left;
-	border: solid 1px #999;
-	border-left: solid 1px #aaa;
-	border-top: solid 1px #bbb;
-	border-radius: 4px 0 4px 4px;
-	box-shadow: 2px 3px 3px rgba(0, 0, 0, 0.2);
+	border: solid 1px hsl(0, 0%, 60%);
+	border-left: solid 1px hsl(0, 0%, 67%);
+	border-top: solid 1px hsl(0, 0%, 73%);
+	border-radius: 4px;
 }
 .post_options:hover ul {
 	display: block;
@@ -1532,7 +1539,7 @@ ul li.greeting {
 	border-radius: 3px;
 }
 .post_options ul a:hover, .post_options ul a:focus {
-	border-color: #c4cbd3;
+	border-color: hsl(212, 15%, 80%);
 }
 /* Note: The next declarations are for keyboard access with js disabled. */
 .quickbuttons ul li a:focus {
@@ -1543,7 +1550,7 @@ ul li.greeting {
 	margin: 0;
 }
 /* Fixes for quickbuttons
-   Fix for quote on reply box */
+	Fix for quote on reply box */
 #post_modify {
 	border-radius: 4px;
 }
@@ -1621,15 +1628,24 @@ ul li.greeting {
 #event_time_input {
 	clear: left;
 }
-#event_time_input input[type="text"] {
-	width: 100px;
-	display: inline-block;
+#event_time_input > div {
+	display: flex;
+}
+#event_time_input input.date_input {
+	width: 40%;
+	margin: 2px 0.5ch 0;
+	flex: 1 1 auto;
+}
+#event_time_input input.time_input {
+	width: 100%;
+	margin: 2px 0.5ch 0;
+	flex: 0 1 auto;
 }
 #post_event input[type="checkbox"] {
 	height: auto;
 }
 #post_event input[type="text"][disabled] {
-	color: #b1b1b1;
+	color: hsl(0, 0%, 69%);
 }
 #post_event select, #event_options input[type="text"], #tz {
 	max-width: calc(100% - 75px);
@@ -1730,7 +1746,7 @@ fieldset.merge_options {
 	clear: both;
 	text-align: right;
 	font-weight: bold;
-	color: #fff;
+	color: hsl(0, 0%, 100%);
 }
 .login dd {
 	width: 54%;
@@ -1783,16 +1799,18 @@ dl.register_form dd {
 .coppa_contact {
 	padding: 4px;
 	width: 32ex;
-	background: #fff;
-	color: #222;
+	background: hsl(0, 0%, 100%);
+	color: hsl(0, 0%, 13%);
 	margin-left: 5ex;
-	border: 1px solid #222;
+	border: 1px solid hsl(0, 0%, 13%);
 }
 .valid_input {
-	background: #f5fff0;
+	background: hsl(100, 100%, 97%);
+	color: hsl(0, 0%, 0%);
 }
 .invalid_input {
-	background: #fff0f0;
+	background: hsl(0, 0%, 100%)0f0;
+	color: hsl(0, 0%, 0%);
 }
 
 /* Styles for maintenance mode.
@@ -1817,17 +1835,17 @@ dl.register_form dd {
 
 tr.windowbg td, tr.bg td, .table_grid tr td {
 	padding: 4px 8px;
-	color: #ddd;
+	color: hsl(39, 45%, 53%);
 }
 .windowbg td:hover {
-/*	background: #000; */
+/*	background: hsl(0, 0%, 0%); */
 }
 #credits p {
 	font-style: italic;
 }
 
 .errorfile_table {
-	background: #f0f4f7;
+	background: hsl(206, 30%, 95%);
 	border-collapse: collapse;
 }
 .errorfile_table .file_line {
@@ -1836,10 +1854,10 @@ tr.windowbg td, tr.bg td, .table_grid tr td {
 }
 .errorfile_table td.current {
 	font-weight: bold;
-	border-top: 1px solid rgba(0, 0, 0, 0.2);
-	border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+	border-top: 1px solid hsla(0, 0%, 0%, 0.2);
+	border-bottom: 1px solid hsla(0, 0%, 0%, 0.2);
 	border-width: 1px 0 1px 1px;
-	background: rgba(245, 141, 15, 0.2);
+	background: hsla(33, 92%, 51%, 0.2);
 }
 
 .generic_menu {
@@ -2233,10 +2251,10 @@ tr.windowbg td, tr.bg td, .table_grid tr td {
 	position: relative;
 }
 .errorbox {
-	background-color: #1b1b1b;
-	border-top: 2px solid #bd9851;
-	border-bottom: 2px solid #bd9851;
-	color: #ddd;
+	background-color: hsl(0, 0%, 11%);
+	border-top: 2px solid hsl(39, 45%, 53%);
+	border-bottom: 2px solid hsl(39, 45%, 53%);
+	color: hsl(0, 0%, 87%);
 }
 .errorbox h3 {
 	padding: 0;
@@ -2268,20 +2286,20 @@ tr.windowbg td, tr.bg td, .table_grid tr td {
 	background-position: -161px -83px;
 }
 .noticebox {
-/*	color: #000; */
+/*	color: hsl(0, 0%, 0%); */
 	background: none;
-	border-top: 1px solid #ffd324;
-	border-bottom: 1px solid #ffd324;
+	border-top: 1px solid hsl(48, 100%, 57%);
+	border-bottom: 1px solid hsl(48, 100%, 57%);
 }
 .infobox {
-	color: #ddd;
-	background: #1b1b1b;
-	border-top: 1px solid #bd9851;
-	border-bottom: 1px solid #bd9851;
+	color: hsl(0, 0%, 87%);
+	background: hsl(0, 0%, 11%);
+	border-top: 1px solid hsl(39, 45%, 53%);
+	border-bottom: 1px solid hsl(39, 45%, 53%);
 }
 .descbox {
 	padding: 7px 10px 7px 10px;
-	border: 1px solid #c5c5c5;
+	border: 1px solid hsl(39, 45%, 53%); 	
 	margin: 6px 0;
 }
 
@@ -2289,23 +2307,23 @@ tr.windowbg td, tr.bg td, .table_grid tr td {
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
 .generic_bar, .progress_bar {
-	border: 1px solid #000;
-	background: #fff;
+	border: 1px solid hsl(0, 0%, 0%);
+	background: hsl(0, 0%, 100%);
 	min-height: 16px;
 	line-height: 1.4em;
 	border-radius: 2px;
 	position: relative;
 	overflow: hidden;
-	color: rgb(255 245 245 / 48%);
+	color: hsl(120, 100%, 25%);
 }
 .generic_bar span, .progress_bar span {
 	position: relative;
 	z-index: 2;
-	text-shadow: 1px 1px rgba(255, 255, 255, .4);
+	text-shadow: 1px 1px hsla(0, 0%, 100%, 0.4);
 	display: inline-block;
 	padding: 0 5px;
-    font-weight: bold;
-    color: #000;
+	 font-weight: bold;
+	 color: hsl(0, 0%, 0%);
 }
 .generic_bar .bar, .progress_bar .bar {
 	position: absolute;
@@ -2313,12 +2331,12 @@ tr.windowbg td, tr.bg td, .table_grid tr td {
 	top: 0;
 	left: 0;
 	bottom: 0;
-	background: linear-gradient(to bottom, #ffde74 10%, #5c331e 90%);
-    border-right: 1px solid #000;
+	background: linear-gradient(to bottom, hsl(46, 100%, 73%) 10%, hsl(20, 51%, 24%) 90%);
+	 border-right: 1px solid hsl(0, 0%, 0%);
 	transition: width .3s;
 	border-radius: 1px;
-	box-shadow: 4px -4px 8px rgba(0, 0, 0, 0.1) inset,
-		4px 4px 8px rgba(255,255,255,0.3) inset;
+	box-shadow: 4px -4px 8px hsla(0, 0%, 0%, 0.1) inset,
+		4px 4px 8px hsla(0, 0%, 100%, 0.3) inset;
 	display: block;
 }
 .generic_bar.vertical {
@@ -2327,37 +2345,37 @@ tr.windowbg td, tr.bg td, .table_grid tr td {
 .generic_bar.vertical .bar {
 	right: 0;
 	top: auto;
-	box-shadow: 4px -4px 4px rgba(0, 0, 0, 0.1) inset,
-		4px 4px 4px rgba(255,255,255,0.3) inset;
+	box-shadow: 4px -4px 4px hsla(0, 0%, 0%, 0.1) inset,
+		4px 4px 4px hsla(0, 0%, 100%, 0.3) inset;
 }
 
 .progress_bar {
 	border-radius: 4px;
 	text-align: center;
 	font-weight: bold;
-	color: rgba(0, 0, 0, 0.8);
+	color: hsla(0, 0%, 0%, 0.8);
 }
 .progress_bar .bar {
-	box-shadow: -1px 1px 0 rgba(255, 255, 255, 0.25) inset,
-		1px -1px 0 rgba(0,0,0,0.1) inset;
-	background-color: #75da41;
+	box-shadow: -1px 1px 0 hsla(0, 0%, 100%, 0.25) inset,
+		1px -1px 0 hsla(0, 0%, 0%, 0.1) inset;
+	background-color: hsl(100, 67%, 55%);
 	background-size: 30px 30px;
-	background-image: linear-gradient(135deg, rgba(255, 255, 255, .15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .15) 50%, rgba(255, 255, 255, .15) 75%, transparent 75%, transparent);
+	background-image: linear-gradient(135deg, hsla(0, 0%, 100%, 0.15) 25%, transparent 25%, transparent 50%, hsla(0, 0%, 100%, 0.15) 50%, hsla(0, 0%, 100%, 0.15) 75%, transparent 75%, transparent);
 }
 .progress_yellow .bar {
-	background-color: #f6c51c;
+	background-color: hsl(47, 92%, 54%);
 }
 
 .progress_green .bar {
-	background-color: #75da41;
+	background-color: hsl(100, 67%, 55%);
 }
 
 .progress_red .bar {
-	background-color: #f45d4c;
+	background-color: hsl(6, 88%, 63%);
 }
 
 .progress_blue .bar {
-	background-color: #34c2e3;
+	background-color: hsl(191, 76%, 55%);
 }
 
 /* Styles for the profile section.
@@ -2419,13 +2437,13 @@ dl {
 	overflow: auto;
 	margin: 0 0 18px 0;
 	padding: 0 0 15px 0;
-	border-bottom: 1px #ccc solid;
+	border-bottom: 1px hsl(0, 0%, 80%) solid;
 }
 #detailedinfo dt, #tracking dt {
 	width: 35%;
 	margin: 0 0 3px 0;
 	font-weight: bold;
-	color: #ddd;
+	color: hsl(0, 0%, 87%);
 }
 #detailedinfo dd, #tracking dd {
 	width: 65%;
@@ -2469,10 +2487,10 @@ dl {
 }
 .activity_stats li span {
 	display: block;
-	border: 1px solid #666;
+	border: 1px solid hsl(0, 0%, 40%);
 	border-left: none;
 	border-right: none;
-	background: #eee;
+	background: hsl(0, 0%, 93%);
 }
 .activity_stats li.last span {
 	border-right: none;
@@ -2508,7 +2526,7 @@ dl {
 	padding: 5px 6px 1px 2px;
 	font-size: 2.2em;
 	font-weight: bold;
-	color: #ddd;
+	color: hsl(0, 0%, 87%);
 	float: left;
 }
 .topic_details {
@@ -2518,8 +2536,8 @@ dl {
 	margin-left: 25px;
 }
 .list_posts {
-	border-top: 1px solid #000;
-	box-shadow: 0 1px 0 #000 inset;
+	border-top: 1px solid hsl(0, 0%, 0%);
+	box-shadow: 0 1px 0 hsl(0, 0%, 0%) inset;
 	padding-top: 12px;
 	margin-top: 8px;
 	margin-bottom: 1em;
@@ -2572,13 +2590,13 @@ dl {
 }
 .boardslist a {
 	font-weight: bold;
-	border-bottom: 1px solid #c4c4c4;
+	border-bottom: 1px solid hsl(0, 0%, 77%);
 	display: block;
 	margin-bottom: 0.5em;
 }
 .boardslist a:hover {
 	text-decoration: none;
-	border-bottom: 1px solid #334466;
+	border-bottom: 1px solid hsl(220, 33%, 30%);
 }
 .boardslist label {
 	display: inline-block;
@@ -2612,7 +2630,7 @@ dl {
 	float: left;
 }
 #pick_theme .selected {
-	background: #000;
+	background: hsl(0, 0%, 0%);
 }
 
 /* Signature preview */
@@ -2638,16 +2656,16 @@ dl {
 	max-width: 250px;
 }
 .warning_level.none .bar {
-	background-color: #75da41;
+	background-color: hsl(100, 67%, 55%);
 }
 .warning_level.watched .bar {
-	background-color: #ffd800;
+	background-color: hsl(51, 100%, 50%);
 }
 .warning_level.moderated .bar {
-	background-color: orange;
+	background-color: hsl(39, 100%, 50%);
 }
 .warning_level.muted .bar {
-	background-color: #f45d4c;
+	background-color: hsl(6, 88%, 63%);
 }
 
 /* Styles for the statistics center.
@@ -2713,26 +2731,26 @@ dl.stats {
 	padding: 0 12px 0 0;
 }
 #personal_messages .capacity_bar {
-	background: #f0f4f7;
+	background: hsl(206, 30%, 95%);
 	display: block;
 	margin: 6px 0 0 12px;
 	height: 12px;
-	border: 1px solid #adadad;
+	border: 1px solid hsl(0, 0%, 68%);
 	width: 10em;
 }
 #personal_messages .capacity_bar span {
-	border-right: 1px solid #adadad;
+	border-right: 1px solid hsl(0, 0%, 68%);
 	display: block;
 	height: 12px;
 }
 #personal_messages .capacity_bar span.empty {
-	background: #a6d69d;
+	background: hsl(111, 41%, 73%);
 }
 #personal_messages .capacity_bar span.filled {
-	background: #eea800;
+	background: hsl(42, 100%, 47%);
 }
 #personal_messages .capacity_bar span.full {
-	background: #f10909;
+	background: hsl(0, 93%, 49%);
 }
 #personal_messages .reportlinks {
 	padding: 6px 1.3em;
@@ -2748,7 +2766,7 @@ dl.stats {
 }
 dl.addrules dt.floatleft {
 	width: 15em;
-	color: #333;
+	color: hsl(0, 0%, 20%);
 	padding: 0 15px 6px 15px;
 }
 #addrule fieldset {
@@ -2759,7 +2777,7 @@ dl.addrules dt.floatleft {
 	margin-right: 10px;
 }
 .unread_pm {
-	background: #cfc;
+	background: hsl(120, 100%, 90%);
 }
 /* Styles for the show alerts section.
 ------------------------------------------------- */
@@ -2879,9 +2897,9 @@ dl.addrules dt.floatleft {
 #helpmain {
 	margin: 12px 0 0 0;
 	padding: 8px 20px 12px 20px;
-	border: 1px solid #000;
+	border: 1px solid hsl(0, 0%, 0%);
 	border-radius: 7px;
-	box-shadow: 0 -2px 2px rgba(0, 0, 0, 0.1);
+	box-shadow: 0 -2px 2px hsla(0, 0%, 0%, 0.1);
 	overflow: auto;
 }
 #helpmain p {
@@ -2909,11 +2927,11 @@ dl.addrules dt.floatleft {
 	overflow-wrap: break-word;
 	max-width: 350px;
 	padding: 6px 9px;
-	color: #333;
-	background: #fff;
-	border: 1px solid #aaa;
+	color: hsl(0, 0%, 20%);
+	background: hsl(0, 0%, 100%);
+	border: 1px solid hsl(0, 0%, 67%);
 	border-radius: 4px;
-	box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.2), 0 0px 10px rgba(0, 0, 0, 0.05) inset;
+	box-shadow: 1px 2px 4px hsla(0, 0%, 0%, 0.2), 0 0px 10px hsla(0, 0%, 0%, 0.05) inset;
 }
 
 /* Styles for popup windows */
@@ -2924,7 +2942,7 @@ dl.addrules dt.floatleft {
 	left: 0;
 	width: 100%;
 	height: 100%;
-	background: rgba(40, 64, 80, 0.5);
+	background: hsla(204, 33%, 24%, 0.5);
 	z-index: 6;
 }
 #genericmenu > .popup_container {
@@ -2940,8 +2958,8 @@ dl.addrules dt.floatleft {
 	position: relative;
 	width: auto;
 	z-index: 99;
-	box-shadow: 0 3px 6px rgba(0, 0, 0, 0.5);
-	border: 1px solid #777;
+	box-shadow: 0 3px 6px hsla(0, 0%, 0%, 0.5);
+	border: 1px solid hsl(0, 0%, 47%);
 	border-radius: 7px 7px 3px 3px;
 	margin: 0 auto;
 	padding: 0;
@@ -2953,18 +2971,18 @@ dl.addrules dt.floatleft {
 }
 .popup_heading {
 	padding: 10px 8px;
-	color: #000;
+	color: hsl(0, 0%, 0%);
 }
 .popup_content {
-	color: #222;
+	color: hsl(0, 0%, 13%);
 	line-height: 1.6em;
 	max-height: 30em;
 	overflow: auto;
 	padding: 10px 8px;
-	border: 1px solid #bbb;
-	border-bottom: 1px solid #000;
+	border: 1px solid hsl(0, 0%, 73%);
+	border-bottom: 1px solid hsl(0, 0%, 0%);
 	border-radius: 6px 6px 2px 2px;
-	box-shadow: 0 -2px 3px rgba(0, 0, 0, 0.15), 0 1px 1px rgba(255, 255, 255, 0.2);
+	box-shadow: 0 -2px 3px hsla(0, 0%, 0%, 0.15), 0 1px 1px hsla(0, 0%, 100%, 0.2);
 }
 #main_menu .popup_heading,
 #genericmenu .popup_heading,
@@ -2989,39 +3007,42 @@ dl.addrules dt.floatleft {
 }
 
 .generic_list_wrapper, .windowbg, .approvebg, .approvebg2 {
-	background: #1f1f1f;
+	background: hsl(0, 0%, 12%);
 	margin: 12px 0 0 0;
 	padding: 12px 16px;
-	border: 1px solid #000;
+	border: 1px solid hsl(0, 0%, 0%);
 	border-radius: 6px;
-	box-shadow: 0 -2px 2px rgba(0, 0, 0, 0.1);
+	box-shadow: 0 -2px 2px hsla(0, 0%, 0%, 0.1);
 	overflow: auto;
 }
 .windowbg:hover hr {
-	background: #fff;
+	background: hsl(39, 45%, 53%);
 }
 .windowbg:hover .bbc_code {
-	background: #2b2a2a;
-	color: #ddd;
+	background: hsl(0, 0%, 18%);
+	color: hsl(0, 0%, 87%);
 }
 /* Here comes the glory... */
 .windowbg:nth-of-type(even), .bg.even {
-	background: #1f1f1f;
+	background: hsl(0, 0%, 12%);
 }
-.windowbg:nth-of-type(even):hover, .bg.even, .windowbg:nth-of-type(odd):hover, .bg.odd {
-	background: #2b2a2a;
+.windowbg:nth-of-type(even):hover, .bg.even {
+	background: hsl(0, 1%, 17%);
 }
 .windowbg:nth-of-type(odd), .bg.odd {
-	background: #262525;
+	background: hsl(0, 1%, 15%);
+}
+.windowbg:nth-of-type(odd):hover, .bg.odd {
+	background: hsl(0, 1%, 17%);
 }
 /* Highlight the target item */
 .windowbg:target {
-	background: #2b2a2a;
+	background: hsl(0, 1%, 17%);
 }
 
 /* Add some hover on table rows */
 tr.windowbg:hover {
-	background: #2b2a2a;
+	background: hsl(0, 1%, 17%);
 }
 
 /* Special treatment for #forumposts area */
@@ -3030,23 +3051,23 @@ tr.windowbg:hover {
 }
 /* Nobody wants locked topics to stand out much. */
 .windowbg.locked {
-	background: #e7eaef;
+	background: hsl(0, 0%, 19%);
 }
 /* Sticky topics get a different background */
 .windowbg.sticky {
-	background: #cfdce8;
+	background: hsl(0, 0%, 19%);
 }
 /* Locked AND sticky are a bit more technical */
 .windowbg.sticky.locked {
-	background: #e8d8cf;
+	background: hsl(0, 0%, 19%);
 }
 /* Awaiting approval is a bit special, topics first */
 .windowbg.approvetopic {
-	background: #e4a17c;
+	background: hsl(0, 51%, 38%);
 }
 /* Unapproved posts in approved topics */
 .windowbg.approvepost {
-	background: #ffcbcb;
+	background: hsl(0, 51%, 38%);
 }
 .generic_list_wrapper .additional_row {
 	margin: 0;
@@ -3054,7 +3075,7 @@ tr.windowbg:hover {
 	border-radius: 0;
 }
 .generic_list_wrapper table.table_grid {
-	border-bottom: 1px solid #aaa;
+	border-bottom: 1px solid hsl(0, 0%, 67%);
 }
 
 div#editlang_desc {
@@ -3078,12 +3099,12 @@ tr.windowbg {
 
 /* Colors for background of posts requiring approval */
 .approvebg {
-	color: #222;
-	background: #ffeaea;
+	color: hsl(0, 0%, 13%);
+	background: hsl(0, 51%, 38%);
 }
 .approvebg2 {
-	color: #222;
-	background: #fff2f2;
+	color: hsl(0, 0%, 13%);
+	background: hsl(0, 51%, 38%);
 }
 
 div#manage_boards dl dd textarea[name=desc] {
@@ -3154,8 +3175,8 @@ h3 .collapse {
 	padding: 13px 10px 10px;
 }
 .boardindex_table .board_stats p {
-	border-left: 1px solid #000;
-	border-right: 1px solid #000;
+	border-left: 1px solid hsl(0, 0%, 0%);
+	border-right: 1px solid hsl(0, 0%, 0%);
 }
 .info {
 	overflow: hidden;
@@ -3166,7 +3187,7 @@ h3 .collapse {
 .info .subject {
 	font-weight: 600;
 	font-size: 1.1em;
-	color: #bd9851;
+	color: hsl(39, 45%, 53%);
 }
 .board_stats {
 	width: 15%;
@@ -3182,34 +3203,35 @@ h3 .collapse {
 .board_icon, .info, .board_stats, .lastpost {
 	display: inline-block;
 	align-self: center;
-	color: #b1b1b1;
+	color: hsl(0, 0%, 69%);
 }
 .main_container {
 	margin-bottom: 20px;
 }
 .up_contain {
 	overflow: hidden;
-	border: 1px solid #000;
+	border: 1px solid hsl(0, 0%, 0%);
 	margin: -1px 0 3px 0;
 	display: flex;
 	flex-wrap: wrap;
 }
 .up_contain:hover {
 	overflow: hidden;
-	border: 1px solid #000;
+	border: 1px solid hsl(0, 0%, 0%);
 	margin: -1px 0 3px 0;
 	display: flex;
 	flex-wrap: wrap;
-	background: #2b2a2a;
+	background: hsl(0, 1%, 17%);
 }
 /* Child boards */
 .children {
-	border-top: 1px solid #000;
+	border-top: 1px solid hsl(0, 0%, 0%);
 	padding: 5px;
 	width: 100%;
 }
 .children p {
 	font-size: 0.9em;
+	margin-left: 8px;
 }
 .children span::after {
 	content: ", ";
@@ -3229,11 +3251,12 @@ span.postby {
 	clear: both;
 }
 #info_center .sub_bar {
-	border-top: 1px solid #000;
+	border: 1px solid hsl(0, 0%, 0%);
+	border-radius: 0 0 6px 6px;
 }
-#info_center .sub_bar:first-child {
-	border-top: none;
-}
+/* #info_center .sub_bar:first-child {
+	border-top: none; 
+} */
 #upshrink_stats {
 	margin-top: 4px;
 }
@@ -3248,10 +3271,10 @@ span.postby {
 	padding: 0 4px 0 0;
 }
 #ic_recentposts td {
-	border-top: 1px solid #808080;
+	border-top: 1px solid hsl(39, 45%, 53%);
 	padding: 0 4px 0 0;
 	vertical-align: top;
-	color: #808080;
+	color: hsl(0, 0%, 50%);
 }
 #ic_recentposts tr:first-child td {
 	border-top: none;
@@ -3269,7 +3292,7 @@ span.postby {
 	width: 25%;
 }
 #ic_recentposts .recenttime strong {
-	color: #808080;
+	color: hsl(0, 0%, 50%);
 }
 #ic_recentposts .windowbg {
 	background: none;
@@ -3299,7 +3322,7 @@ span.postby {
 }
 #description_board h3, #description_board div {
 	display: inline-block;
-	color: #ddd;
+	color: hsl(0, 0%, 87%);
 }
 #description_board h3::after {
 	content: " - ";
@@ -3309,17 +3332,19 @@ span.postby {
 	margin: 0;
 	border-radius: 0;
 	display: flex;
+	border-radius: 6px 6px 0 0;
 }
 #topic_header div {
 	font-weight: bold;
 	font-size: 1em;
 	padding: 0;
+		color: hsl(0, 0%, 0%);
 }
 #topic_header input {
 	margin-top: 5px !important;
 }
 #topic_container .windowbg {
-	border: 1px solid #000;
+	border: 1px solid hsl(0, 0%, 0%);
 	border-top: none;
 	display: flex;
 	box-shadow: none;
@@ -3471,7 +3496,7 @@ div#pollmoderation {
 .poster h4, .poster h4 a, .poster li:hover h4 a, .poster h4 a:hover .poster li h4 a, .poster h4 a:focus {
 	margin: 0;
 	padding: 0;
-	color: #bd9851;
+	color: hsl(39, 45%, 53%);
 }
 
 .poster .profile .profile_icons li, .poster .im_icons li {
@@ -3482,13 +3507,13 @@ div#pollmoderation {
 /* The visible stuff below the avatar. */
 .user_info > li {
 	margin: 3px 0 0 0;
-	color: #b1b1b1;
+	color: hsl(0, 0%, 69%);
 	overflow: visible;
 	height: auto;
 }
 .poster li.membergroup {
 	font-weight: bold;
-	color: #b1b1b1;
+	color: hsl(0, 0%, 69%);
 }
 /* @todo Re-code this a bit to give background on anchor. */
 .poster li.poster_online, .poster li.poster_online:hover {
@@ -3496,7 +3521,7 @@ div#pollmoderation {
 	margin: 3px 10px;
 }
 .poster li.poster_online a {
-	color: #c06002;
+	color: hsl(30, 98%, 38%);
 	line-height: 1.6em;
 }
 .poster li.poster_online:hover, .poster li.poster_online:hover a {
@@ -3546,13 +3571,13 @@ img.avatar {
 	display: block;
 }
 .keyinfo .postinfo a, .keyinfo .postinfo a strong {
-	color: #bd9851;
+	color: hsl(39, 45%, 53%);
 }
 .keyinfo .postinfo .spacer {
 	flex: 1 1 auto;
 }
 .keyinfo .postinfo .modified {
-	color: #ffde74;
+	color: hsl(46, 100%, 73%);
 	font-weight: normal;
 	font-style: italic;
 	padding: 2px 4px 0 4px;
@@ -3568,14 +3593,14 @@ img.avatar {
 }
 .subject_title a {
 	font-size: 0.9em;
-	color: #bd9851;
+	color: hsl(39, 45%, 53%);
 	font-weight: bold;
 }
 .subject_hidden a {
 	display: none;
 }
 .page_number {
-	color: #bd9851;
+	color: hsl(39, 45%, 53%);
 	font-weight: bold;
 	padding: 4px 0 0 4px;
 	line-height: 1.5em;
@@ -3583,12 +3608,12 @@ img.avatar {
 .inner {
 	padding: 7px 8px 2px 2px;
 	margin: 0;
-	border-top: 1px solid #333;
-	box-shadow: 0 1px 0 #fff inset;
+	border-top: 1px solid hsl(0, 0%, 0%);
+	box-shadow: 0 1px 0 hsl(39, 45%, 53%) inset;
 	min-height: 85px;
 	word-wrap: break-word; /* IE fallback */
 	overflow-wrap: break-word;
-	color: #ddd;
+	color: hsl(0, 0%, 87%);
 }
 img.smiley {
 	vertical-align: bottom;
@@ -3683,9 +3708,9 @@ ul.post_options li {
 	height: 22px;
 }
 #post_settings, #postAttachment, #postAttachment2, #attachment_previews {
-	border-top: 1px solid #000;
-	margin: -1px 0 0 0;
-	padding: 10px 0;
+	border-top: 1px solid hsl(0, 0%, 0%);
+	margin: 0px 0 0 0;
+	padding: 0px 0px 1px 0px;
 }
 #postAttachment dd, #postAttachment2 dd {
 	margin: 4px 0;
@@ -3698,15 +3723,15 @@ ul.post_options li {
 	font-weight: bold;
 }
 #post_draft_options {
-	background: #fdfdfd;
-	border: 1px solid #aaa;
-	border-left: 1px solid #bbb;
+	background: hsl(0, 0%, 99%);
+	border: 1px solid hsl(0, 0%, 67%);
+	border-left: 1px solid hsl(0, 0%, 73%);
 	border-top: none;
 	border-radius: 0 0 4px 4px;
 }
 #post_draft_options .settings dd, #post_draft_options .settings dt {
 	width: 50%;
-	border-top: 1px solid #e4e4e4;
+	border-top: 1px solid hsl(0, 0%, 89%);
 	padding: 5px 10px;
 	margin: 0;
 }
@@ -3714,7 +3739,7 @@ ul.post_options li {
 	border-top: none; /* Some people are OCD, like me. :P */
 }
 #post_draft_options .settings strong {
-	color: #555;
+	color: hsl(0, 0%, 33%);
 }
 #post_confirm_buttons {
 	display: flex;
@@ -3770,8 +3795,8 @@ ul.post_options li {
 	overflow: auto;
 	clear: right;
 	padding: 12px 0 3px 0;
-	border-top: 1px solid #bfbfbf;
-	box-shadow: 0 1px 0 #fff inset;
+	border-top: 1px solid hsl(0, 0%, 0%);
+	box-shadow: 0 1px 0 hsl(39, 45%, 53%) inset;
 	line-height: 1.4em;
 	font-size: 0.9em;
 }
@@ -3811,23 +3836,23 @@ ul.post_options li {
 	border-spacing: 1px;
 }
 .errorfile_table td {
-	background: #fbfbfb;
+	background: hsl(0, 0%, 98%);
 }
 .errorfile_table .current {
-	background: #fbc6c6;
+	background: hsl(0, 87%, 88%);
 }
 .errorfile_table .file_line.current {
-	background: #fb9090;
+	background: hsl(0, 93%, 77%);
 }
 .errorfile_table .file_line {
-	background: #ececec;
+	background: hsl(0, 0%, 93%);
 }
 
 /* General Classes */
 /* Cat_bar / catbg */
 div.cat_bar {
-	background: linear-gradient(to bottom, #ffde74 10%, #5c331e 90%);
-	border-bottom: 0px solid #000;
+	background: linear-gradient(to bottom, hsl(46, 100%, 73%) 10%, hsl(20, 51%, 24%) 90%);
+	border-bottom: 0px solid hsl(0, 0%, 0%);
 	padding: 0;
 	border-radius: 6px 6px 0 0;
 }
@@ -3840,15 +3865,15 @@ div.cat_bar {
 }
 /* Styles for rounded headers. */
 .cat_bar .desc {
-	color: #ffe1a9;
+	color: hsl(39, 100%, 83%);
 	font-size: 12px;
 	line-height: 1.5em;
 	font-weight: bold;
-	margin: -8px 0 4px 14px;
+	margin: -12px 0 4px 12px;
 	padding-bottom: 7px;
 }
 .cat_bar .desc a {
-	color: #fff;
+	color: hsl(0, 0%, 100%);
 	font-weight: 600;
 }
 h3.catbg {
@@ -3857,7 +3882,7 @@ h3.catbg {
 	font-family: "Tahoma", sans-serif;
 }
 h3.catbg, h3.catbg a, h3.catbg a:hover {
-	color: #000;
+	color: hsl(0, 0%, 0%);
 }
 h3.catbg a:hover {
 	text-decoration: none;
@@ -3869,8 +3894,8 @@ h3.catbg .main_icons::before, h3.catbg .icon {
 	margin-top: -1px;
 	border-top-left-radius: 0;
 	border-top-right-radius: 0;
-	border: 1px solid #000;
-	background: #1f1f1f;
+	border: 1px solid hsl(0, 0%, 0%);
+	background: hsl(0, 0%, 12%);
 }
 .cat_bar + .title_bar {
 	margin-top: 0;
@@ -3879,77 +3904,55 @@ h3.catbg .main_icons::before, h3.catbg .icon {
 .roundframe {
 	margin: 10px 0 0 0;
 	padding: 12px 16px;
-	background: #202020;
-	border: 1px solid #000;
+	background: hsl(0, 0%, 13%);
+	border: 1px solid hsl(0, 0%, 0%);
 	border-radius: 7px;
-	box-shadow: 0 -2px 2px rgba(0, 0, 0, 0.1);
+	box-shadow: 0 -2px 2px hsla(0, 0%, 0%, 0.1);
 	overflow: auto;
-	color: #b1b1b1;
+	color: hsl(0, 0%, 69%);
 }
 .roundframe:hover {
-  background: #2b2a2a;
+  background: hsl(0, 1%, 17%);
 }
 /* TitleBar & SubBar */
 .title_bar {
-	background: #1b1b1b;
-	color: #666;
-	border-radius: 2px 2px 0 0;
+	border: none;
+	background: linear-gradient(to bottom, hsl(46, 100%, 73%) 10%, hsl(20, 51%, 24%) 90%);
+	color: hsl(0, 0%, 40%);
+	border-radius: 6px 6px 0 0;
 	margin: 5px 0 0 0;
 }
 .sub_bar {
-	border-bottom: 1px solid #000;
 	text-shadow: none;
 	background: none;
 	clear: both;
 }
-h3.subbg, .subbg {
-	background: #202020 url(../images/theme/main_block.png) no-repeat 0 -120px;
-	color: #ddd;
+h3.subbg, h4.subbg, .subbg {
+	background: hsl(0, 0%, 13%) url(../images/theme/main_block.png) no-repeat 0 -120px;
+	color: hsl(39, 45%, 53%);
 	font-family: "Tahoma", sans-serif;
 	font-weight: bold;
 	overflow: hidden;
 	padding: 6px 12px 5px 12px;
 	text-shadow: none;
 }
-h4.titlebg, h4.subbg, .subbg {
-	background: #202020 url(../images/theme/main_block.png) no-repeat 0 -120px;
-	color: #555;
+h3.titlebg, h4.titlebg, .titlebg {
+	color: hsl(0, 0%, 0%);
 	font-family: "Tahoma", sans-serif;
 	font-weight: bold;
 	overflow: hidden;
 	padding: 6px 12px 5px 12px;
 	text-shadow: none;
 }
-.titlebg {
-	background: #202020 url(../images/theme/main_block.png) no-repeat 0 -120px;
-	color: #555;
-	font-family: "Tahoma", sans-serif;
-	font-weight: bold;
-	overflow: hidden;
-	padding: 6px 12px 5px 12px;
-	text-shadow: none;
-	border: none;
-}
-h3.titlebg, h4.titlebg {
-	background: linear-gradient(to bottom, #ffde74 10%, #5c331e 90%);
-	color: #000;
-	font-family: "Tahoma", sans-serif;
-	font-weight: bold;
-	overflow: hidden;
-	padding: 6px 12px 5px 12px;
-	text-shadow: none;
-	border-top-left-radius: 4px;
-	border-top-right-radius: 4px;
-}
+
 .subbg a {
 	background: none;
-	color: #808080;
+	color: hsl(39, 45%, 53%);
 	text-decoration: none;
 }
-.titlebg a {
-	background: none;
-	color: #000;
-	text-decoration: none;
+.title_bar a {
+	color: hsl(0, 0%, 0%);
+	text-decoration: none;	
 }
 .title_bar + .windowbg, .title_bar + .roundframe {
 	margin-top: -1px;
@@ -3960,15 +3963,15 @@ h3.titlebg, h4.titlebg {
 /* Other */
 /* Information */
 .information {
-	background: #1f1f1f;
+	background: hsl(0, 0%, 12%);
 	overflow: auto;
 	padding-bottom: .5em;
-	border: 1px solid #000;
-/*	border-top: none; */
+	border: 1px solid hsl(0, 0%, 0%);
 	border-radius: 6px;
 	margin: 0 0 10px 0;
 	padding: 12px 9px 8px 9px;
-	color: #b1b1b1;
+	color: hsl(0, 0%, 69%);
+	width: 100%;
 }
 .generic_list_wrapper .information div {
 	background: none;
@@ -3985,7 +3988,7 @@ p.information img {
 }
 #topic_icons .information,
 #messageindex .information {
-	border-top: 1px solid #000;
+	border-top: 1px solid hsl(0, 0%, 0%);
 }
 .topic_pages {
 	font-size: 0.75em;
@@ -4004,25 +4007,25 @@ p.information img {
 	left: 0;
 	display: none;
 	margin-top: 18px;
-	background: #fff;
-	border: 1px solid #000;
+	background: hsl(0, 0%, 100%);
+	border: 1px solid hsl(0, 0%, 0%);
 	border-radius: 3px;
-	box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+	box-shadow: 0 0 5px hsla(0, 0%, 0%, 0.1);
 	min-width: 120px;
 	z-index: 11110 !important;
 }
 .atwho-view .cur {
-	background: #3366ff;
-	color: #fff;
+	background: hsl(225, 100%, 60%);
+	color: hsl(0, 0%, 100%);
 }
 .atwho-view .cur small {
-	color: #fff;
+	color: hsl(0, 0%, 100%);
 }
 .atwho-view strong {
-	color: #3366ff;
+	color: hsl(225, 100%, 60%);
 }
 .atwho-view .cur strong {
-	color: #fff;
+	color: hsl(0, 0%, 100%);
 	font-weight: bold;
 }
 .atwho-view ul {
@@ -4033,12 +4036,12 @@ p.information img {
 .atwho-view ul li {
 	display: block;
 	padding: 5px 10px;
-	border-bottom: 1px solid #ddd;
+	border-bottom: 1px solid hsl(0, 0%, 87%);
 	cursor: pointer;
 }
 .atwho-view small {
 	font-size: smaller;
-	color: #777;
+	color: hsl(0, 0%, 47%);
 	font-weight: normal;
 }
 /* On/Off Icons (User) */
@@ -4051,12 +4054,12 @@ p.information img {
 	vertical-align: middle;
 }
 .on {
-	background: #89e75a;
-	border-color: #74d246;
+	background: hsl(100, 75%, 63%);
+	border-color: hsl(100, 61%, 55%);
 }
 .off {
-	background: #a7a2a2;
-	border-color: #969292;
+	background: hsl(0, 3%, 65%);
+	border-color: hsl(0, 2%, 58%);
 }
 #userstatus .smalltext {
 	margin: 0 0 0 5px !important;
@@ -4086,6 +4089,7 @@ p.information img {
 	margin-top: -1px !important;
 }
 span.member.hidden {
+	display: inline-block;
 	font-style: italic;
 }
 
@@ -4114,41 +4118,43 @@ h3.profile_hd::before,
 /* Background of buttons */
 .dropmenu li li:hover, .dropmenu li li:hover > a, .dropmenu li li a:focus, .dropmenu li li a:hover,
 .inline_mod_check {
-	color: #fff;
+	color: hsl(0, 0%, 100%);
 	text-shadow: none;
+	border: none;
 }
 .post_options ul, .post_options ul a:hover, .post_options ul a:focus, .notify_dropdown a:hover, .notify_dropdown a:focus {
-	background: #fff; /* fallback for some browsers */
-	background-image: linear-gradient(#e2e9f3 0%, #fff 70%);
+	background: hsl(0, 0%, 100%); /* fallback for some browsers */
+	background-image: linear-gradient(hsl(215, 41%, 92%) 0%, hsl(0, 0%, 100%) 70%);
 }
 /* Well some of them has different gradient effect on hover */
 .button:hover, #search_form .button:hover {
-	background: linear-gradient(to bottom, #ffde74 10%, #5c331e 90%);
-	border: 1px solid #ffde74;
+	background: linear-gradient(to bottom, hsl(46, 100%, 73%) 10%, hsl(20, 51%, 24%) 90%);
+	border: 1px solid hsl(46, 100%, 73%);
 	text-decoration: none;
-	color: #fff;
+	color: hsl(0, 0%, 100%);
 }
 .quickbuttons li:hover {
-	background: #191919;
+	background: hsl(0, 0%, 10%);
 }
 .quickbuttons > li, .quickbuttons li ul, .quickbuttons li ul li a:hover, .quickbuttons ul li a:focus {
-	background-image: linear-gradient(to bottom, #4c4c4c 10%, #1b1b1b 90%);
+	background-image: linear-gradient(to bottom, hsl(0, 0%, 30%) 10%, hsl(0, 0%, 11%) 90%);
 	text-decoration: none;
 }
 .popup_window {
-	background-image: linear-gradient(to bottom, #ffde74 20%, #5c331e 80%);
-	border: 1px solid #1b1b1b;
+/*	background: hsl(0, 0%, 100%); /* fallback for some browsers */
+	background-image: linear-gradient(to bottom, hsl(46, 100%, 73%) 20%, hsl(20, 51%, 24%) 80%);
+	border: 1px solid hsl(0, 0%, 11%);
 	text-decoration: none;
 }
 /* If it fits I sits... */
-.navigate_section ul, .popup_content, .up_contain {
-	background: #1f1f1f;
+.popup_content, .up_contain {
+	background: hsl(0, 0%, 12%);
 }
 .popup_content {
-	color: #ddd;
-	border: 1px solid #1b1b1b;
+	background: hsl(0, 0%, 12%);
+	color: hsl(0, 0%, 87%);
+	border: 1px solid hsl(0, 0%, 11%);
 }
-
 /* Topic/Board follow-alert menu */
 .notify_dropdown strong {
 	font-size: 1.1em;
@@ -4161,14 +4167,13 @@ h3.profile_hd::before,
 	border-radius: 3px;
 }
 .notify_dropdown a:hover, .notify_dropdown a:focus {
-	border-color: #ddd;
-	background: #fff; /* fallback for some browsers */
-	background-image: linear-gradient(#e2e9f3 0%, #fff 70%);
+	border-color: hsl(0, 0%, 87%);
+	background: hsl(0, 0%, 100%); /* fallback for some browsers */
+	background-image: linear-gradient(hsl(215, 41%, 92%) 0%, hsl(0, 0%, 100%) 70%);
+	color: hsl(0, 0%, 0%);
 }
 .notify_dropdown span {
- font-size: 0.9em;
- display: block;
- max-width: 500px;
+	font-size: 0.9em;
 }
 
 /* Some new stuff */
@@ -4178,11 +4183,11 @@ h3.profile_hd::before,
 	padding: 7px 10px 7px 10px;
 }
 #display_head p {
-	color: #b1b1b1;
+	color: hsl(0, 0%, 69%);
 }
 #display_head span {
 	margin: -4px 0 0 0;
-	color: #b1b1b1;
+	color: hsl(0, 0%, 69%);
 }
 .display_title {
 	font-weight: normal;
@@ -4206,13 +4211,13 @@ h3.profile_hd::before,
 /* Messages that somehow need to attract the attention. */
 .red, .meaction,
 .error, .alert, .warn_mute {
-	color: red;
+	color: hsl(0, 100%, 50%);
 }
 .blue {
-	color: blue;
+	color: hsl(240, 100%, 50%);
 }
 .green {
-	color: green;
+	color: hsl(120, 100%, 25%);
 }
 
 /* Adding some classes for generic usage and JS rules */
@@ -4229,16 +4234,16 @@ h3.profile_hd::before,
 
 /* Alternating colors */
 .stripes:nth-of-type(even) {
-	background-color: #f2f2f2;
+	background-color: hsl(0, 0%, 95%);
 }
 .stripes:nth-of-type(odd) {
-	background-color: #f0f4f7;
+	background-color: hsl(206, 30%, 95%);
 }
 .alternative {
-	background-color: #f2f2f2;
+	background-color: hsl(0, 0%, 95%);
 }
 .alternative2 {
-	background-color: #e8edf0;
+	background-color: hsl(202, 21%, 93%);
 }
 
 .centerbox {
@@ -4255,7 +4260,7 @@ h3.profile_hd::before,
 	margin-top: 12px;
 }
 #attachment_previews {
-    display: none;
+	 display: none;
 }
 #attachment_previews div.descbox > div,
 #attachment_previews div.errorbox > div,
@@ -4317,7 +4322,7 @@ input[name="attachBBC"] {
 
 /* Two-Factor Auth code container */
 .tfacode {
-	background: #d0e7f8;
+	background: hsl(206, 74%, 89%);
 	padding: 5px;
 	display: inline-block;
 }
@@ -4394,13 +4399,13 @@ tr[id^='list_news_lists_'] textarea {
 }
 .videocontainer video {
 	object-fit: contain;
-	background: black;
+	background: hsl(0, 0%, 0%);
 	max-width: 100%;
 }
 
 .backtrace:not(:last-child) {
 	padding-bottom: 0.5em;
-	border-bottom: 1px solid #ddd;
+	border-bottom: 1px solid hsl(0, 0%, 87%);
 	margin-bottom: 0.5em;
 }
 
@@ -4436,66 +4441,70 @@ input[type="radio"] { /* change "blue" browser chrome to gold */
 /* ===== Scrollbar CSS ===== */
   /* Firefox */
   * {
-    scrollbar-width: auto;
-    scrollbar-color: #000000 #bd9851;
+	 scrollbar-width: auto;
+	 scrollbar-color: hsl(0, 0%, 0%)000 hsl(39, 45%, 53%);
   }
 
   /* Chrome, Edge, and Safari */
   *::-webkit-scrollbar {
-    width: 15px;
+	 width: 15px;
   }
 
   *::-webkit-scrollbar-track {
-    background: #bd9851;
+	 background: hsl(39, 45%, 53%);
   }
 
   *::-webkit-scrollbar-thumb {
-    background-color: #000000;
-    border: 2px solid #8f6c2b;
+	 background-color: hsl(0, 0%, 0%)000;
+	 border: 2px solid hsl(39, 54%, 36%);
   }
+
   /* ===== Scrollbar CSS ===== */
   /* Firefox */
   * {
-    scrollbar-width: auto;
-    scrollbar-color: #000000 #bd9851;
+	 scrollbar-width: auto;
+	 scrollbar-color: hsl(0, 0%, 0%)000 hsl(39, 45%, 53%);
   }
 
   /* Chrome, Edge, and Safari */
 ::-webkit-scrollbar {
-      width: 16px;
-      border: 5px solid #0e0e0e;
-    }
-    ::-webkit-scrollbar-thumb {
-      background-color: #000;
-      background-clip: padding-box;
-      border: 0.05em solid #000;
-    }
-    ::-webkit-scrollbar-track {
-      background-color: #bd9851;
-    }
-    /* Buttons */
-    ::-webkit-scrollbar-button:single-button {
-      background-color: #161515;
-      display: block;
-      border-style: solid;
-      height: 13px;
-      width: 16px;
-    }
-    /* Up */
-    ::-webkit-scrollbar-button:single-button:vertical:decrement {
-      border-width: 0 8px 8px 8px;
-      border-color: transparent transparent #ffde74 transparent;
-    }
+		width: 16px;
+		border: 5px solid hsl(0, 0%, 5%);
 
-    ::-webkit-scrollbar-button:single-button:vertical:decrement:hover {
-      border-color: transparent transparent #ba964f transparent;
-    }
-    /* Down */
-    ::-webkit-scrollbar-button:single-button:vertical:increment {
-      border-width: 8px 8px 0 8px;
-      border-color: #ffde74 transparent transparent transparent;
-    }
+	 }
 
-    ::-webkit-scrollbar-button:vertical:single-button:increment:hover {
-      border-color: #ba964f transparent transparent transparent;
-    }	 
+	 ::-webkit-scrollbar-thumb {
+		background-color: hsl(0, 0%, 0%);
+		background-clip: padding-box;
+		border: 0.05em solid hsl(0, 0%, 0%);
+	 }
+
+	 ::-webkit-scrollbar-track {
+		background-color: hsl(39, 45%, 53%);
+	 }
+	 /* Buttons */
+	 ::-webkit-scrollbar-button:single-button {
+		background-color: hsl(0, 2%, 8%);
+		display: block;
+		border-style: solid;
+		height: 13px;
+		width: 16px;
+	 }
+	 /* Up */
+	 ::-webkit-scrollbar-button:single-button:vertical:decrement {
+		border-width: 0 8px 8px 8px;
+		border-color: transparent transparent hsl(46, 100%, 73%) transparent;
+	 }
+
+	 ::-webkit-scrollbar-button:single-button:vertical:decrement:hover {
+		border-color: transparent transparent hsl(40, 44%, 52%) transparent;
+	 }
+	 /* Down */
+	 ::-webkit-scrollbar-button:single-button:vertical:increment {
+		border-width: 8px 8px 0 8px;
+		border-color: hsl(46, 100%, 73%) transparent transparent transparent;
+	 }
+
+	 ::-webkit-scrollbar-button:vertical:single-button:increment:hover {
+		border-color: hsl(40, 44%, 52%) transparent transparent transparent;
+	 }

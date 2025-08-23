@@ -10,23 +10,31 @@
 	margin: 0;
 }
 /* Used to indicate the current day in the grid. */
-#main_grid .calendar_today span.day_text, #month_grid .calendar_today span.day_text,
+#main_grid .calendar_today span.day_text,
+#month_grid .calendar_today,
 .calendar_week tr.days_wrapper td.calendar_today:first-child {
 	font-weight: bold;
-	color: #bd9851;
+	color: hsl(0, 0%, 87%);
+/*	text-decoration: underline; */
+}
+.calendar_today,
+td.days:hover {
+	background: hsl(0, 0%, 18%);
 }
 .calendar_today,
 td.days {
-	background: #2d2d2d;
+	background: hsl(0, 0%, 18%);
+}
+.calendar_today {
+	background: hsl(0, 0%, 18%);
 }
 #main_grid .calendar_today {
-   border-top: 2px solid #606060;
-   background: linear-gradient(to bottom, #323232 50%, #2c2c2c 100%);
-   color: #bd9851;
+   border-top: 2px solid hsl(39, 45%, 53%);
+   background: hsl(0, 0%, 18%);
 }
 #month_grid .calendar_today {
-   border-top: 2px solid #606060;
-   background: linear-gradient(to bottom, #323232 50%, #2c2c2c 100%);
+   border-top: 2px solid hsl(39, 45%, 53%);
+   background: hsl(0, 0%, 18%);
 }
 #month_grid {
 	width: 214px;
@@ -42,8 +50,8 @@ td.days {
 	width: 100%;
 	margin-bottom: 12px;
 	border-collapse: collapse;
-	background: #f0f4f7;
-	border: 1px solid #000;
+	background: hsl(206, 30%, 95%);
+	border: 1px solid hsl(0, 0%, 0%);
 }
 #main_grid {
 	overflow: auto;
@@ -51,35 +59,39 @@ td.days {
 #main_grid table {
 	width: 99.9%;
 	border-collapse: collapse;
-	background: #f0f4f7;
+	background: hsl(206, 30%, 95%);
 	margin: 1px 0 0 0;
-	border: 1px solid #000;
+	border: 1px solid hsl(0, 0%, 0%);
 	overflow: auto;
 }
 #main_grid .cat_bar {
 	border-radius: 5px 5px 0 0;
 }
 #month_grid th:first-child {
-	background: linear-gradient(to bottom, #1b1b1b 10%, #212121 90%);
+	background: linear-gradient(to bottom, hsl(0, 0%, 11%) 10%, hsl(0, 0%, 13%) 90%);
 }
 #month_grid th.days {
-	background: #181717;
+	background: hsl(0, 2%, 9%);
 	font-size: smaller;
-	color: #b1b1b1;
+	color: hsl(0, 0%, 69%);
 }
 #month_grid th.days,
 #month_grid td.weeks {
 	padding: 2px;
 	text-align: center;
-	background: linear-gradient(to bottom, #1b1b1b 10%, #212121 90%);
+	background: linear-gradient(to bottom, hsl(0, 0%, 11%) 10%, hsl(0, 0%, 13%) 90%);
 }
 #month_grid td.weeks {
 	font-size: large;
-	background: #262525;
+	background: hsl(0, 1%, 15%);
 	width: 5%;
 }
 #month_grid td.weeks a:hover {
 	text-decoration: underline;
+}
+#month_grid h3.catbg,
+#main_grid h3.catbg {
+/*	padding: 4px 6px 0 6px; */
 }
 #main_grid h3.catbg span {
 	display: block;
@@ -87,20 +99,20 @@ td.days {
 	margin: -3px 4px 0 4px;
 }
 #main_grid th:first-child {
-	background: #e7eaef;
+	background: hsl(218, 20%, 92%);
 }
 #main_grid th.days {
 	width: 14%;
 	padding: 5px 10px;
 	text-align: left;
-	background: #1f1f1f;
-	color: #b1b1b1;
+	background: hsl(218, 20%, 92%);
+	color: hsl(0, 0%, 69%);
 }
 #main_grid td.weeks {
 	text-align: center;
 	font-weight: bold;
 	font-size: 1.8em;
-	background: #262525;
+	background: hsl(0, 1%, 15%);
 	padding: 5px;
 }
 #main_grid td.weeks a:hover {
@@ -109,85 +121,92 @@ td.days {
 /* Main Highlighting */
 #main_grid td.disabled,
 #month_grid td.disabled {
-	background: #1a1919;
-	border: 1px solid #1b1b1b;
+	background: hsl(0, 2%, 10%);
+	border: 1px solid hsl(0, 0%, 11%);
 }
 #main_grid td.disabled a ,
 #month_grid td.disabled a {
-	color: #595656;
+	color: hsl(0, 2%, 34%);
 }
 #main_grid td.events,
 #month_grid td.events {
-	background: rgba(86, 83, 83);
+	background: hsl(0, 2%, 33%);
 }
 #main_grid td.holidays,
 #month_grid td.holidays {
-	background: #936a2d;
-	color: #000;
+	background: hsl(36, 53%, 38%);
+	color: hsl(0, 0%, 0%);
 	font-weight: bold;
 }
 #main_grid td.holidays a, #main_grid td.holidays span{
-	color: #b1b1b1;
-	background: #936a2d;
-	font-weight: bold;
+	color: hsl(0, 0%, 69%);
+	background: hsl(0, 0%, 12%);
 }
 #main_grid td.birthdays,
 #month_grid td.birthdays {
-	background: rgba(102, 0, 255, 0.1);
+	background: hsl(264, 100%, 50%);
 }
 /* Special Case Highlighting */
 #main_grid td.events:hover,
 #month_grid td.events:hover,
 #month_grid td.calendar_today.events {
-	background: rgba(30, 245, 20, 0.2);
+	background: hsl(117, 92%, 52%);
 }
 #main_grid td.holidays:hover,
 #month_grid td.holidays:hover,
 #month_grid td.calendar_today.holidays {
-	background: #7a5c21;
-	color: #000;
+	background: hsl(40, 57%, 30%);
+	color: hsl(0, 0%, 0%);
 }
 #main_grid td.birthdays:hover,
 #month_grid td.birthdays:hover,
 #month_grid td.calendar_today.birthdays {
-	background: rgba(153, 51, 255, 0.2);
+	background: hsl(270, 100%, 60%);
 }
 #main_grid td.days,
 #month_grid td.days {
 	vertical-align: top;
 	text-align: left;
-	border-right: 1px solid #000;
-	border-bottom: 1px solid #000;
+	border-right: 1px solid hsl(0, 0%, 0%);
+	border-bottom: 1px solid hsl(0, 0%, 0%);
+}
+#main_grid td.days {
+	padding: 5px;
+	background: hsl(0, 0%, 12%);
 }
 #month_grid td.days {
 	padding: 0;
 	width: 12.5%;
 	text-align: center;
+	background: hsl(0, 0%, 12%);
 
 }
 #month_grid td.days a {
 	display: block;
 	padding: 5px;
-	color: #b2b2b2;
+}
+#month_grid td.days a:hover {
+	text-decoration: none;
+	background: hsl(0, 0%, 18%);
 }
 #main_grid tbody tr:nth-child(2) td.days,
 #month_grid tbody tr:nth-child(2) {
-	border-top: 1px solid #000;
+	border-top: 1px solid hsl(0, 0%, 0%);
 }
 #main_grid tbody tr.days_wrapper > td:nth-child(2),
 #month_grid tr.days_wrapper > td:nth-child(2) {
-	border-left: 1px solid #000;
+	border-left: 1px solid hsl(0, 0%, 0%);
 }
 #main_grid tr.days_wrapper:nth-child(2) > td.weeks {
-	border-top: 1px solid #000;
+	border-top: 1px solid hsl(0, 0%, 0%);
 }
 #main_grid table:last-child td.weeks {
-	border-bottom: 1px solid #000;
+	border-bottom: 1px solid hsl(0, 0%, 0%);
 }
 #main_grid tr:not(.days_wrapper) th,
 #main_grid tr:not(.days_wrapper) td {
 	min-height: 30px;
-	background: linear-gradient(to bottom, #1b1b1b 10%, #212121 90%);
+	background: linear-gradient(to bottom, hsl(0, 0%, 11%) 10%, hsl(0, 0%, 13%) 90%);
 }
 .calendar_top input[type="text"] {
 	width: 90px;
@@ -204,7 +223,7 @@ td.days {
 	font-size: 12pt;
 }
 #main_grid .active_post_event > a {
-	color: #999;
+	color: hsl(0, 0%, 60%);
 }
 div.week_month_title {
 	font-weight: bold;
@@ -213,16 +232,20 @@ div.week_month_title {
 	line-height: 1.2em;
 }
 div.week_month_title a {
-	color: #555;
+	color: hsl(0, 0%, 33%);
 }
 td.week_post {
 	vertical-align: middle !important;
 }
+div.week_add_event {
+	/* text-align: center; */
+}
 div.week_add_event > a {
-	color: #999;
+	/* font-size: x-large; */
+	color: hsl(0, 0%, 60%);
 }
 div.week_add_event > a:hover {
-	color: #555;
+	color: hsl(0, 0%, 33%);
 }
 span.hidelink {
 	font-style: italic;
@@ -250,10 +273,10 @@ span.hidelink {
 .event_wrapper:not(:last-child) {
 	margin-bottom: 5px;
 	padding-bottom: 5px;
-	border-bottom: 1px solid #ddd;
+	border-bottom: 1px solid hsl(0, 0%, 87%);
 }
 .event_time, .event_location {
-	color: #777;
+	color: hsl(0, 0%, 47%);
 }
 .post_event_link {
 	vertical-align: middle;
@@ -265,7 +288,7 @@ span.hidelink {
 }
 .smalltext {
 	font-weight: normal;
-	color: #b1b1b1;
+	color: hsl(0, 0%, 69%);
 }
 
 /* Break long words in calendar table cells to avoid layout problems */
@@ -321,7 +344,7 @@ span.hidelink {
 	}
 
 	#main_grid .calendar_week tr {
-		border: 1px solid #ddd !important;
+		border: 1px solid hsl(0, 0%, 87%) !important;
 	}
 	#main_grid .calendar_week td {
 		margin: 0;
@@ -368,14 +391,4 @@ span.hidelink {
 		clear: both;
 		padding: 10px 0 0;
 	}
-}
-/* Here comes the glory... */
-.windowbg:nth-of-type(even), .bg.even {
-	background: #1f1f1f;
-}
-.windowbg:nth-of-type(even):hover, .bg.even, .windowbg:nth-of-type(odd):hover, .bg.odd {
-	background: #1f1f1f;
-}
-.windowbg:nth-of-type(odd), .bg.odd {
-	background: #1f1f1f;
 }

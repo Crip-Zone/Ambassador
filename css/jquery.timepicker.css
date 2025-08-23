@@ -2,9 +2,9 @@
 	overflow-y: auto;
 	height: 150px;
 	width: 6.5em;
-	background: #fff;
-	border: 1px solid #ddd;
-	box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+	background: hsl(0, 0%, 100%);
+	border: 1px solid hsl(0, 0%, 87%);
+	box-shadow: 0 5px 10px hsla(0, 0%, 0%, 0.2);
 	outline: none;
 	z-index: 10001;
 	margin: 0;
@@ -27,47 +27,47 @@
 
 .ui-timepicker-duration {
 	margin-left: 5px;
-	color: #888;
+	color: hsl(0, 0%, 53%);
 }
 
 .ui-timepicker-list:hover .ui-timepicker-duration {
-	color: #888;
+	color: hsl(0, 0%, 53%);
 }
 
 .ui-timepicker-list li {
 	padding: 3px 0 3px 5px;
 	cursor: pointer;
 	white-space: nowrap;
-	color: #000;
+	color: hsl(0, 0%, 0%);
 	list-style: none;
 	margin: 0;
 }
 
 .ui-timepicker-list:hover .ui-timepicker-selected {
-	background: #fff;
-	color: #000;
+	background: hsl(0, 0%, 100%);
+	color: hsl(0, 0%, 0%);
 }
 
 li.ui-timepicker-selected,
 .ui-timepicker-list li:hover,
 .ui-timepicker-list .ui-timepicker-selected:hover {
-	background: #1980ec;
-	color: #fff;
+	background: hsl(211, 85%, 51%);
+	color: hsl(0, 0%, 100%);
 }
 
 li.ui-timepicker-selected .ui-timepicker-duration,
 .ui-timepicker-list li:hover .ui-timepicker-duration {
-	color: #ccc;
+	color: hsl(0, 0%, 80%);
 }
 
 .ui-timepicker-list li.ui-timepicker-disabled,
 .ui-timepicker-list li.ui-timepicker-disabled:hover,
 .ui-timepicker-list li.ui-timepicker-selected.ui-timepicker-disabled {
-	color: #888;
+	color: hsl(0, 0%, 53%);
 	cursor: default;
 }
 
 .ui-timepicker-list li.ui-timepicker-disabled:hover,
 .ui-timepicker-list li.ui-timepicker-selected.ui-timepicker-disabled {
-	background: #f2f2f2;
+	background: hsl(0, 0%, 95%);
 }
